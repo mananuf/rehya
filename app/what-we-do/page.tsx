@@ -5,7 +5,7 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { FOCUS_AREAS, PROJECTS } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "What We Do — NCDC",
+  title: "What We Do",
   description:
     "The Commission's eight focus areas — infrastructure, agriculture, peace & rehabilitation, health, education, solid minerals, ecology, and youth & innovation.",
 };

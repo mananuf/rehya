@@ -5,7 +5,7 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { SITE } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "About Us — NCDC",
+  title: "About Us",
   description:
     "Who we are: the North Central Development Commission's mandate, mission, vision and establishment under the NCDC Act, 2024.",
 };

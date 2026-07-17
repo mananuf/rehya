@@ -23,7 +23,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) return {};
-  return { title: `${project.name} — NCDC`, description: project.summary };
+  return { title: `${project.name}`, description: project.summary };
 }
 
 export default async function ProjectPage({

@@ -3,7 +3,7 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { ProjectExplorer } from "@/components/site/project-explorer";
 
 export const metadata: Metadata = {
-  title: "Projects — NCDC",
+  title: "Projects",
   description:
     "Explore NCDC projects across the North Central region — filter by state, focus area and status.",
 };

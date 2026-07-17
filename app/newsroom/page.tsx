@@ -6,7 +6,7 @@ import { formatDate } from "@/lib/content";
 import { NEWS } from "@/lib/news-data";
 
 export const metadata: Metadata = {
-  title: "Newsroom — NCDC",
+  title: "Newsroom",
   description:
     "News and official announcements from the North Central Development Commission.",
 };

@@ -24,7 +24,7 @@ export async function generateMetadata({
   const state = getState(slug);
   if (!state) return {};
   return {
-    title: `${state.name} — ${state.epithet} — NCDC`,
+    title: `${state.name} — ${state.epithet}`,
     description: state.summary,
   };
 }

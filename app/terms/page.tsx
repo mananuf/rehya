@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — NCDC",
+  title: "Terms of Use",
   description:
     "Terms of use for the North Central Development Commission website.",
 };

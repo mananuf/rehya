@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell";
 
 export const metadata: Metadata = {
-  title: "Image Credits — NCDC",
+  title: "Image Credits",
   description:
     "Photography credits for imagery used on the NCDC website, licensed via Wikimedia Commons.",
 };

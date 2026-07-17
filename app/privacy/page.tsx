@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — NCDC",
+  title: "Privacy Policy",
   description:
     "How the North Central Development Commission handles personal data on this website, in line with the Nigeria Data Protection Act 2023.",
 };

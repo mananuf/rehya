@@ -3,7 +3,7 @@ import Link from "next/link";
 import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell";
 
 export const metadata: Metadata = {
-  title: "Procurement & Tenders — NCDC",
+  title: "Procurement & Tenders",
   description:
     "NCDC procurement — open tenders, our procurement principles under the Public Procurement Act 2007, and how to become a vendor.",
 };

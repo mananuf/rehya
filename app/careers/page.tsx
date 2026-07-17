@@ -3,7 +3,7 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { StaticForm } from "@/components/site/static-form";
 
 export const metadata: Metadata = {
-  title: "Careers — NCDC",
+  title: "Careers",
   description:
     "Careers at the North Central Development Commission — current vacancies and the regional talent register.",
 };

@@ -3,7 +3,7 @@ import { Download } from "lucide-react";
 import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell";
 
 export const metadata: Metadata = {
-  title: "The Establishment Act — NCDC",
+  title: "The Establishment Act",
   description:
     "The North Central Development Commission (Establishment) Act, 2024 — summary and full PDF download.",
 };

@@ -4,7 +4,7 @@ import { StaticForm } from "@/components/site/static-form";
 import { SITE, STATES } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Contact Us — NCDC",
+  title: "Contact Us",
   description:
     "Contact the North Central Development Commission — headquarters in Lafia, Nasarawa State, and liaison offices across the region.",
 };

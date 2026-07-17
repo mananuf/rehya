@@ -3,7 +3,7 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { LEADERSHIP } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Board & Management — NCDC",
+  title: "Board & Management",
   description:
     "The Governing Board and management of the North Central Development Commission.",
 };

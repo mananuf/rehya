@@ -4,7 +4,7 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { PROJECTS, STATES, STATE_IMAGES } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "States & FCT — NCDC",
+  title: "States & FCT",
   description:
     "The six states and the Federal Capital Territory where the North Central Development Commission works.",
 };

@@ -3,7 +3,7 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { SITE } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Freedom of Information — NCDC",
+  title: "Freedom of Information",
   description:
     "How to make a Freedom of Information request to the North Central Development Commission under the FOI Act 2011.",
 };

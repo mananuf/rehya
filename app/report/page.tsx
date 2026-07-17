@@ -4,7 +4,7 @@ import { StaticForm } from "@/components/site/static-form";
 import { STATES } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Report a Project — NCDC",
+  title: "Report a Project",
   description:
     "Citizen project reporting — flag abandoned works, quality concerns or misconduct on any project in the North Central region, anonymously if you prefer.",
 };

@@ -3,7 +3,7 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { ResourceLibrary } from "@/components/site/resource-library";
 
 export const metadata: Metadata = {
-  title: "Resources & Documents — NCDC",
+  title: "Resources & Documents",
   description:
     "The NCDC document library — the Establishment Act, budgets, strategy documents, policies and reports.",
 };

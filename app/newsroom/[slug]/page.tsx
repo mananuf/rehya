@@ -18,7 +18,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) return {};
-  return { title: `${article.title} — NCDC`, description: article.excerpt };
+  return { title: `${article.title}`, description: article.excerpt };
 }
 
 export default async function ArticlePage({
