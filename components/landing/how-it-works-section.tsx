@@ -2,24 +2,24 @@
 
 import { useEffect, useRef, useState } from "react";
 import { 
-  Road, 
+  Hammer, 
   Wheat, 
   Handshake, 
   Heart, 
   BookOpen, 
-  PickaxeIcon, 
-  Sprout, 
+  Gem, 
+  Leaf, 
   Lightbulb 
 } from "lucide-react";
 
 const focusAreas = [
-  { number: "01", title: "Infrastructure", subtitle: "& Connectivity", icon: Road },
+  { number: "01", title: "Infrastructure", subtitle: "& Connectivity", icon: Hammer },
   { number: "02", title: "Agriculture", subtitle: "& Food Security", icon: Wheat },
   { number: "03", title: "Peace, Security", subtitle: "& Rehabilitation", icon: Handshake },
   { number: "04", title: "Health", subtitle: "Systems", icon: Heart },
   { number: "05", title: "Education", subtitle: "& Human Capital", icon: BookOpen },
-  { number: "06", title: "Solid Minerals", subtitle: "Development", icon: PickaxeIcon },
-  { number: "07", title: "Ecology", subtitle: "& Erosion Control", icon: Sprout },
+  { number: "06", title: "Solid Minerals", subtitle: "Development", icon: Gem },
+  { number: "07", title: "Ecology", subtitle: "& Erosion Control", icon: Leaf },
   { number: "08", title: "Youth, Women", subtitle: "& Innovation", icon: Lightbulb },
 ];
 
