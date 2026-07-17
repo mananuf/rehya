@@ -127,11 +127,11 @@ export function HeroSection() {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Beautiful_formations_in_Jos_Nigeria.jpg/1920px-Beautiful_formations_in_Jos_Nigeria.jpg"
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover object-center opacity-30"
+          className="w-full h-full object-cover object-center opacity-50"
         />
         {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-white/30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-white/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/50 to-white/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-white/30" />
       </div>
 
       {/* Subtle grid lines */}

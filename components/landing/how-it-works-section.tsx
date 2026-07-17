@@ -1,16 +1,26 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { 
+  Road, 
+  Wheat, 
+  Handshake, 
+  Heart, 
+  BookOpen, 
+  PickaxeIcon, 
+  Sprout, 
+  Lightbulb 
+} from "lucide-react";
 
 const focusAreas = [
-  { number: "01", title: "Infrastructure", subtitle: "& Connectivity", icon: "🛣️" },
-  { number: "02", title: "Agriculture", subtitle: "& Food Security", icon: "🌾" },
-  { number: "03", title: "Peace, Security", subtitle: "& Rehabilitation", icon: "🕊️" },
-  { number: "04", title: "Health", subtitle: "Systems", icon: "🏥" },
-  { number: "05", title: "Education", subtitle: "& Human Capital", icon: "📚" },
-  { number: "06", title: "Solid Minerals", subtitle: "Development", icon: "⛏️" },
-  { number: "07", title: "Ecology", subtitle: "& Erosion Control", icon: "🌱" },
-  { number: "08", title: "Youth, Women", subtitle: "& Innovation", icon: "💡" },
+  { number: "01", title: "Infrastructure", subtitle: "& Connectivity", icon: Road },
+  { number: "02", title: "Agriculture", subtitle: "& Food Security", icon: Wheat },
+  { number: "03", title: "Peace, Security", subtitle: "& Rehabilitation", icon: Handshake },
+  { number: "04", title: "Health", subtitle: "Systems", icon: Heart },
+  { number: "05", title: "Education", subtitle: "& Human Capital", icon: BookOpen },
+  { number: "06", title: "Solid Minerals", subtitle: "Development", icon: PickaxeIcon },
+  { number: "07", title: "Ecology", subtitle: "& Erosion Control", icon: Sprout },
+  { number: "08", title: "Youth, Women", subtitle: "& Innovation", icon: Lightbulb },
 ];
 
 export function HowItWorksSection() {
@@ -73,7 +83,9 @@ export function HowItWorksSection() {
               style={{ transitionDelay: isVisible ? `${index * 50}ms` : "0ms" }}
             >
               {/* Icon */}
-              <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{area.icon}</div>
+              <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
+                <area.icon className="w-8 h-8 text-primary stroke-[1.5]" />
+              </div>
 
               {/* Number */}
               <span className="text-sm font-mono text-primary font-medium block mb-3">
