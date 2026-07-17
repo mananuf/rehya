@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'COMPUTE - AI Agents for Distributed Computing',
-  description: 'Deploy autonomous AI agents on distributed infrastructure. Offload complex tasks to intelligent workers that run 24/7.',
+  title: 'NCDC - North Central Development Commission',
+  description: 'Rebuilding the heart of Nigeria. Driving reconstruction, rehabilitation and sustainable development across 6 states and the FCT.',
   generator: 'v0.app',
 }
 
@@ -32,8 +32,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${instrumentSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+    <html lang="en" className="bg-background">
+      <body className={`${instrumentSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background`}>
         {children}
         <Analytics />
       </body>

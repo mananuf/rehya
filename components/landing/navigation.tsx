@@ -5,11 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "Capabilities",  href: "#features"      },
-  { name: "Process",       href: "#how-it-works"  },
-  { name: "Infra",         href: "#infra"          },
-  { name: "Integrations",  href: "#integrations"  },
-  { name: "Security",      href: "#security"      },
+  { name: "About",         href: "#about"         },
+  { name: "What We Do",    href: "#mandate"       },
+  { name: "Projects",      href: "#focus-areas"   },
+  { name: "States",        href: "#states"        },
+  { name: "Newsroom",      href: "#newsroom"      },
+  { name: "Resources",     href: "#resources"     },
 ];
 
 export function Navigation() {
@@ -35,7 +36,7 @@ export function Navigation() {
       <nav 
         className={`mx-auto transition-all duration-500 ${
           isScrolled || isMobileMenuOpen
-            ? "bg-background/80 backdrop-blur-xl border border-foreground/10 rounded-2xl shadow-lg max-w-[1200px]"
+            ? "bg-white/90 backdrop-blur-xl border border-border rounded-2xl shadow-lg max-w-[1200px]"
             : "bg-transparent max-w-[1400px]"
         }`}
       >
@@ -45,9 +46,16 @@ export function Navigation() {
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl text-foreground" : "text-2xl text-white"}`}>COMPUTE</span>
-            <span className={`font-mono transition-all duration-500 ${isScrolled ? "text-[10px] mt-0.5 text-muted-foreground" : "text-xs mt-1 text-white/60"}`}>TM</span>
+          <a href="#" className="flex items-center gap-3 group">
+            <img 
+              src="/ncdc-logo.png" 
+              alt="NCDC" 
+              className={`transition-all duration-500 ${isScrolled ? "h-8" : "h-10"}`}
+            />
+            <div className="hidden sm:flex flex-col">
+              <span className={`font-display font-bold tracking-tight transition-all duration-500 ${isScrolled ? "text-sm text-foreground" : "text-base text-foreground"}`}>NCDC</span>
+              <span className={`font-mono text-[10px] leading-none transition-all duration-500 text-muted-foreground`}>Federal Commission</span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
@@ -66,14 +74,14 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className={`transition-all duration-500 ${isScrolled ? "text-xs text-foreground/70 hover:text-foreground" : "text-sm text-white/70 hover:text-white"}`}>
-              Sign in
+            <a href="#" className={`transition-all duration-500 text-xs font-medium ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-foreground/70 hover:text-foreground"}`}>
+              Contact
             </a>
             <Button
               size="sm"
-              className={`rounded-full transition-all duration-500 ${isScrolled ? "bg-foreground hover:bg-foreground/90 text-background px-4 h-8 text-xs" : "bg-white hover:bg-white/90 text-black px-6"}`}
+              className={`rounded-full transition-all duration-500 bg-primary hover:bg-primary/90 text-white px-6 h-8 text-xs font-medium`}
             >
-              Deploy agent
+              Report a Project
             </Button>
           </div>
 
@@ -123,7 +131,7 @@ export function Navigation() {
           </div>
           
           {/* Bottom CTAs */}
-          <div className={`flex gap-4 pt-8 border-t border-foreground/10 transition-all duration-500 ${
+          <div className={`flex gap-4 pt-8 border-t border-border transition-all duration-500 ${
             isMobileMenuOpen 
               ? "opacity-100 translate-y-0" 
               : "opacity-0 translate-y-4"
@@ -132,16 +140,16 @@ export function Navigation() {
           >
             <Button 
               variant="outline" 
-              className="flex-1 rounded-full h-14 text-base"
+              className="flex-1 rounded-full h-14 text-base border-border text-foreground"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Sign in
+              Contact
             </Button>
             <Button 
-              className="flex-1 bg-foreground text-background rounded-full h-14 text-base"
+              className="flex-1 bg-primary text-white rounded-full h-14 text-base hover:bg-primary/90"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Deploy agent
+              Report a Project
             </Button>
           </div>
         </div>

@@ -120,22 +120,18 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-start overflow-hidden bg-black">
-      {/* Background video */}
+    <section className="relative min-h-screen flex flex-col justify-center items-start overflow-hidden bg-background">
+      {/* Background image */}
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Beautiful_formations_in_Jos_Nigeria.jpg/1920px-Beautiful_formations_in_Jos_Nigeria.jpg"
+          alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover object-center opacity-80"
-        >
-          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-hero-0BnFGdr81Ifnj3WbBZoNt1KE4D5DMT.mp4" type="video/mp4" />
-        </video>
-        {/* Subtle overlay to ensure text readability on the left */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60" />
+          className="w-full h-full object-cover object-center opacity-30"
+        />
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-white/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-white/40" />
       </div>
 
       {/* Subtle grid lines */}
@@ -172,46 +168,50 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <span className="inline-flex items-center gap-3 text-sm font-mono text-white/60">
-            <span className="w-8 h-px bg-white/30" />
-            Autonomous AI agents for distributed computing
+          <span className="inline-flex items-center gap-3 text-sm font-mono text-primary">
+            <span className="w-8 h-px bg-primary" />
+            Federal Republic of Nigeria · Established by Act, 2024
           </span>
         </div>
         
         {/* Main headline */}
         <div className="mb-12">
           <h1 
-            className={`text-left text-[clamp(2rem,6vw,7rem)] font-display leading-[0.92] tracking-tight text-white transition-all duration-1000 ${
+            className={`text-left text-[clamp(2rem,6vw,7rem)] font-display leading-[0.92] tracking-tight text-foreground transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block whitespace-nowrap">Distributed compute,</span>
+            <span className="block whitespace-nowrap">Rebuilding the heart</span>
             <span className="block whitespace-nowrap">
-              agents that{" "}
-              <span className="relative inline-block">
-                <BlurWord word={words[wordIndex]} trigger={wordIndex} />
-              </span>
+              of{" "}
+              <span className="text-primary">Nigeria</span>
             </span>
           </h1>
+          <p className={`mt-6 text-lg text-muted-foreground max-w-[600px] leading-relaxed transition-all duration-1000 delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}>
+            The Commission drives reconstruction, rehabilitation and sustainable development across 6 states and the FCT, serving over 20 million people.
+          </p>
         </div>
         </div>
       </div>
       
-      {/* Stats — 3 metrics static, no auto-scroll */}
+      {/* Stats — 4 metrics static */}
       <div 
         className={`absolute bottom-12 left-0 right-0 px-6 lg:px-12 transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto flex items-start gap-10 lg:gap-20">
+        <div className="max-w-[1400px] mx-auto flex items-start gap-6 lg:gap-14 flex-wrap">
           {[
-            { value: "3500+", label: "autonomous agents active" },
-            { value: "99.7%", label: "distributed uptime" },
-            { value: "<50ms", label: "execution latency" },
+            { value: "6 States +", label: "FCT Coverage" },
+            { value: "121", label: "Local Government Areas" },
+            { value: "20M+", label: "People Served" },
+            { value: "₦140bn", label: "2026 Budget" },
           ].map((stat) => (
-            <div key={stat.label} className="flex flex-col gap-2">
-              <span className="text-3xl lg:text-4xl font-display text-white">{stat.value}</span>
-              <span className="text-xs text-white/50 leading-tight">
+            <div key={stat.label} className="flex flex-col gap-1">
+              <span className="text-2xl lg:text-3xl font-display text-foreground">{stat.value}</span>
+              <span className="text-xs text-muted-foreground leading-tight font-medium">
                 {stat.label}
               </span>
             </div>
