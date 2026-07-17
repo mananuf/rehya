@@ -74,6 +74,12 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [
       {
+        url: '/og-logo.jpg',
+        width: 1200,
+        height: 1200,
+        alt: 'Official seal of the North Central Development Commission',
+      },
+      {
         url: '/og.png',
         width: 1200,
         height: 630,
@@ -82,10 +88,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'NCDC — North Central Development Commission',
     description: SITE_DESCRIPTION,
-    images: ['/og.png'],
+    images: ['/og-logo.jpg'],
   },
   icons: {
     icon: [
