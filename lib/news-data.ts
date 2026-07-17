@@ -173,7 +173,7 @@ export const NEWS: NewsArticle[] = [
     type: "news",
     tag: "Governance",
     excerpt:
-      "The 19-member pioneer Governing Board of the North Central Development Commission has been inaugurated, with Barr. Cosmas Tenenge Akighir as Chairman and Dr. Cyril Yilten Tsenyil as Managing Director/CEO.",
+      "The 19-member pioneer Governing Board of the North Central Development Commission has been inaugurated, with Barr. Cosmas Tenenge Akighir as Chairman and Dr. Cyril Yiltsen Tsenyil as Managing Director/CEO.",
     body: [
       {
         type: "p",
@@ -181,7 +181,7 @@ export const NEWS: NewsArticle[] = [
       },
       {
         type: "p",
-        text: "Barr. Cosmas Tenenge Akighir (Benue State) serves as Chairman of the Governing Board, with Dr. Cyril Yilten Tsenyil (Plateau State), a chartered accountant and former Accountant-General of Plateau State, as pioneer Managing Director and Chief Executive Officer.",
+        text: "Barr. Cosmas Tenenge Akighir (Benue State) serves as Chairman of the Governing Board, with Dr. Cyril Yiltsen Tsenyil (Plateau State), a chartered accountant and former Accountant-General of Plateau State, as pioneer Managing Director and Chief Executive Officer.",
       },
       {
         type: "p",
