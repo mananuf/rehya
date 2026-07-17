@@ -173,8 +173,8 @@ export function WhereWeWorkSection() {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
         }`}>
           {/* Left: Globe */}
-          <div className="flex items-center justify-center">
-            <div className="relative w-full aspect-square max-w-lg">
+          <div className="flex items-center justify-center min-w-0">
+            <div className="relative w-full aspect-square max-w-lg overflow-hidden">
               <GlobeComponent 
                 states={statesData}
                 selectedStateId={selectedState.id}
@@ -190,7 +190,7 @@ export function WhereWeWorkSection() {
           </div>
 
           {/* Right: State Selector & Info Card */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center min-w-0">
             {/* State Pills */}
             <div className="mb-8">
               <div className="flex flex-wrap gap-3">

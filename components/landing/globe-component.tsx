@@ -207,7 +207,7 @@ export default function GlobeComponent({
   return (
     <div
       ref={containerRef}
-      className="w-full h-full [&_canvas]:!outline-none"
+      className="w-full h-full overflow-hidden [&_canvas]:!outline-none [&_canvas]:max-w-full [&_canvas]:max-h-full"
       role="img"
       aria-label="Rotating globe showing NCDC locations across the North Central region"
     />

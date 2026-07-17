@@ -198,7 +198,7 @@ export function HeroSection() {
       
       {/* Stats — 4 metrics static */}
       <div 
-        className={`absolute bottom-12 left-0 right-0 px-6 lg:px-12 transition-all duration-700 delay-500 ${
+        className={`relative mt-4 pb-12 sm:mt-0 sm:pb-0 sm:absolute sm:bottom-12 left-0 right-0 px-6 lg:px-12 transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >

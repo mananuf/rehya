@@ -35,7 +35,7 @@ export function Navigation({ solid = false }: { solid?: boolean }) {
       }`}
     >
       <nav 
-        className={`mx-auto transition-all duration-500 ${
+        className={`relative z-50 mx-auto transition-all duration-500 ${
           isScrolled || isMobileMenuOpen
             ? "bg-white/90 backdrop-blur-xl border border-border rounded-2xl shadow-lg max-w-[1200px]"
             : "bg-transparent max-w-[1400px]"
