@@ -1,0 +1,115 @@
+[
+  {
+    "slug": "benue",
+    "name": "Benue",
+    "epithet": "Food Basket of the Nation",
+    "capital": "Makurdi",
+    "lgas": 23,
+    "lat": 7.34,
+    "lng": 8.77,
+    "summary": "Nigeria's agricultural heartland — yams, soybeans, rice, citrus — and one of the states most affected by farmer-herder conflict and displacement, making resettlement and agro-industrial recovery central to NCDC's work here.",
+    "activities": [
+      "Resettlement and rehabilitation support for displaced farming communities",
+      "Agro-industrial cluster and rural feeder-road planning",
+      "Erosion and flood-control assessments along the Benue valley"
+    ],
+    "office": "NCDC State Office, Makurdi (liaison)"
+  },
+  {
+    "slug": "kogi",
+    "name": "Kogi",
+    "epithet": "The Confluence State",
+    "capital": "Lokoja",
+    "lgas": 21,
+    "lat": 7.8,
+    "lng": 6.74,
+    "summary": "Where the Niger meets the Benue. Rich in coal, iron ore and limestone, with Ajaokuta at its centre — solid-minerals beneficiation and flood resilience anchor the Commission's agenda in Kogi.",
+    "activities": [
+      "Community-based solid-minerals development partnerships",
+      "Flood-resilience and riverbank protection programmes",
+      "Support for agro-processing along the confluence corridor"
+    ],
+    "office": "NCDC State Office, Lokoja (liaison)"
+  },
+  {
+    "slug": "kwara",
+    "name": "Kwara",
+    "epithet": "State of Harmony",
+    "capital": "Ilorin",
+    "lgas": 16,
+    "lat": 8.5,
+    "lng": 4.55,
+    "summary": "A gateway between the North and South-West with growing agribusiness, ICT and education sectors — NCDC's focus here is youth innovation, human capital and cross-regional trade infrastructure.",
+    "activities": [
+      "Youth digital-skills and innovation hub development",
+      "Agribusiness incubation support",
+      "Trade-corridor infrastructure planning"
+    ],
+    "office": "NCDC State Office, Ilorin (liaison)"
+  },
+  {
+    "slug": "nasarawa",
+    "name": "Nasarawa",
+    "epithet": "Home of Solid Minerals",
+    "capital": "Lafia",
+    "lgas": 13,
+    "lat": 8.49,
+    "lng": 8.52,
+    "summary": "Host of the Commission's headquarters in Lafia and one of Nigeria's richest solid-minerals belts — lithium, barite, tin — with fast-growing peri-urban corridors serving the FCT.",
+    "activities": [
+      "NCDC national headquarters, Lafia",
+      "Responsible-mining cooperatives with state government and federal ministry",
+      "Peri-urban infrastructure and housing studies"
+    ],
+    "office": "NCDC Headquarters, Lafia",
+    "isHq": true
+  },
+  {
+    "slug": "niger",
+    "name": "Niger",
+    "epithet": "The Power State",
+    "capital": "Minna",
+    "lgas": 25,
+    "lat": 9.93,
+    "lng": 6.55,
+    "summary": "Nigeria's largest state by landmass, home to the Kainji, Jebba and Shiroro hydropower dams — energy, irrigation and the rehabilitation of communities affected by banditry define NCDC's priorities.",
+    "activities": [
+      "Rehabilitation and reconstruction planning for conflict-affected communities",
+      "Irrigation and dam-community development programmes",
+      "Rural electrification gap assessments"
+    ],
+    "office": "NCDC State Office, Minna (liaison)"
+  },
+  {
+    "slug": "plateau",
+    "name": "Plateau",
+    "epithet": "Home of Peace and Tourism",
+    "capital": "Jos",
+    "lgas": 17,
+    "lat": 9.92,
+    "lng": 8.9,
+    "summary": "The tin city and highland agriculture powerhouse. Restoring peace, resettling displaced communities and reviving tourism and mining value chains are at the core of the Commission's Plateau agenda.",
+    "activities": [
+      "Post-conflict resettlement and reconstruction of communities",
+      "Highland agriculture (potatoes, vegetables) value-chain support",
+      "Tin and columbite value-addition partnerships"
+    ],
+    "office": "NCDC State Office, Jos (liaison)"
+  },
+  {
+    "slug": "fct",
+    "name": "Federal Capital Territory",
+    "epithet": "Centre of Unity",
+    "capital": "Abuja",
+    "lgas": 6,
+    "lat": 9.06,
+    "lng": 7.49,
+    "summary": "The nation's capital sits within the North Central zone. NCDC coordinates with the FCT Administration on satellite-town infrastructure, rural area councils and regional integration.",
+    "activities": [
+      "Satellite-town and area-council development coordination",
+      "Regional transport integration with FCT Administration",
+      "Liaison with federal ministries and development partners"
+    ],
+    "office": "NCDC Liaison Office, Abuja"
+  }
+]

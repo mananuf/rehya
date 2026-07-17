@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 const GlobeComponent = dynamic(
@@ -104,6 +105,7 @@ export function WhereWeWorkSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedState, setSelectedState] = useState<StateData>(statesData[0]);
   const [inView, setInView] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -111,6 +113,7 @@ export function WhereWeWorkSection() {
         if (entry.isIntersecting) {
           setIsVisible(true);
         }
+        setInView(entry.isIntersecting);
       },
       { threshold: 0.1 }
     );
@@ -121,6 +124,19 @@ export function WhereWeWorkSection() {
 
     return () => observer.disconnect();
   }, []);
+
+  // Auto-cycle through the states every 5s until the user interacts
+  useEffect(() => {
+    if (hasInteracted || !inView) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const interval = setInterval(() => {
+      setSelectedState((current) => {
+        const idx = statesData.findIndex((s) => s.id === current.id);
+        return statesData[(idx + 1) % statesData.length];
+      });
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [hasInteracted, inView]);
 
   return (
     <section
@@ -162,8 +178,11 @@ export function WhereWeWorkSection() {
               <GlobeComponent 
                 states={statesData}
                 selectedStateId={selectedState.id}
-                onStateSelect={setSelectedState}
-                inView={inView}
+                onStateSelect={(state) => {
+                  setHasInteracted(true);
+                  setSelectedState(state);
+                }}
+                onInteract={() => setHasInteracted(true)}
               />
               {/* Halo effect */}
               <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent rounded-full blur-3xl pointer-events-none" />
@@ -178,7 +197,10 @@ export function WhereWeWorkSection() {
                 {statesData.map((state) => (
                   <button
                     key={state.id}
-                    onClick={() => setSelectedState(state)}
+                    onClick={() => {
+                      setHasInteracted(true);
+                      setSelectedState(state);
+                    }}
                     className={`px-4 py-2 rounded-full text-sm font-mono transition-all duration-300 ${
                       selectedState.id === state.id
                         ? "bg-primary text-white shadow-lg"
@@ -217,13 +239,13 @@ export function WhereWeWorkSection() {
               </ul>
 
               {/* Link */}
-              <a
-                href="#"
+              <Link
+                href={`/states/${selectedState.id}`}
                 className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300"
               >
                 Explore {selectedState.name}
                 <ChevronRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

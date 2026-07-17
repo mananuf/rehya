@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 interface StateData {
   id: string;
@@ -15,188 +15,234 @@ interface GlobeComponentProps {
   states: StateData[];
   selectedStateId: string;
   onStateSelect: (state: StateData) => void;
-  inView: boolean;
+  /** Called on first drag/click of the globe, so the parent can pause auto-cycling. */
+  onInteract?: () => void;
 }
 
+type PinDatum = {
+  lat: number;
+  lng: number;
+  id: string;
+  name: string;
+  isHQ?: boolean;
+};
+
+/**
+ * Brand globe: dark sphere + green hex-dot landmass on a transparent
+ * background, pins for the 7 NCDC locations. The globe.gl instance is
+ * created exactly once; selection changes only update pins + camera.
+ */
 export default function GlobeComponent({
   states,
   selectedStateId,
   onStateSelect,
-  inView,
+  onInteract,
 }: GlobeComponentProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const globeRef = useRef<any>(null);
-  const autoRotateTimeoutRef = useRef<NodeJS.Timeout>();
-  const autoRotateIntervalRef = useRef<NodeJS.Timeout>();
-  const [hasInteracted, setHasInteracted] = useState(false);
-  const prefersReducedMotion = typeof window !== "undefined" 
-    ? window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    : false;
+  const selectedRef = useRef(selectedStateId);
+  const callbacksRef = useRef({ onStateSelect, onInteract });
+  callbacksRef.current = { onStateSelect, onInteract };
 
+  // ---------- one-time init ----------
   useEffect(() => {
-    if (!containerRef.current) return;
+    const container = containerRef.current;
+    if (!container) return;
 
-    // Dynamic import of globe.gl to avoid SSR issues
-    import("globe.gl").then((GlobeGL) => {
+    let disposed = false;
+    let cleanupFns: (() => void)[] = [];
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    Promise.all([
+      import("globe.gl"),
+      import("topojson-client"),
+      // world-atlas ships plain JSON TopoJSON files
+      import("world-atlas/countries-110m.json"),
+    ]).then(([GlobeGL, topojson, worldAtlas]) => {
+      if (disposed || !containerRef.current) return;
+
       const Globe = GlobeGL.default;
+      const world = (worldAtlas as any).default ?? worldAtlas;
+      const land = (topojson.feature(
+        world,
+        world.objects.countries
+      ) as any).features.filter(
+        // North Korea's 110m polygon is degenerate for h3-js polygonToCells
+        // (throws code 1) — drop that single feature; imperceptible at
+        // hex resolution 3.
+        (f: any) => f.id !== "408"
+      );
 
-      // Initialize globe with earth texture
-      const globe = new Globe()
-        .globeImageUrl("https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg")
-        .backgroundColor("#0a0a0a")
+      const globe = new Globe(container)
+        .width(container.clientWidth)
+        .height(container.clientHeight)
+        .backgroundColor("rgba(0,0,0,0)")
         .showAtmosphere(true)
+        .atmosphereColor("#1B5E2E")
         .atmosphereAltitude(0.18)
-        .atmosphereColor("#1B5E2E");
+        // green hex-dot landmass, no earth texture
+        .globeImageUrl(null as any)
+        .hexPolygonsData(land)
+        .hexPolygonResolution(3)
+        .hexPolygonMargin(0.72)
+        .hexPolygonAltitude(0.006)
+        .hexPolygonColor(() => "rgba(47, 164, 91, 0.55)");
 
-      // Add pins for each state
+      // dark brand sphere
+      const globeMaterial = globe.globeMaterial() as any;
+      globeMaterial.color.set("#0c1810");
+      globeMaterial.emissive?.set?.("#0a0f0b");
+      globeMaterial.emissiveIntensity = 0.05;
+
+      // pins (HTML markers)
       globe
         .htmlElementsData(
-          states.map((state) => ({
-            lat: state.coords[0],
-            lng: state.coords[1],
-            id: state.id,
-            isSelected: state.id === selectedStateId,
-            isHQ: state.isHQ,
+          states.map<PinDatum>((s) => ({
+            lat: s.coords[0],
+            lng: s.coords[1],
+            id: s.id,
+            name: s.name,
+            isHQ: s.isHQ,
           }))
         )
+        .htmlAltitude(0.02)
         .htmlElement((d: any) => {
-          const el = document.createElement("div");
-          el.className = "globe-pin";
-          el.style.width = d.isHQ ? "16px" : "12px";
-          el.style.height = d.isHQ ? "16px" : "12px";
-          el.style.borderRadius = "50%";
-          el.style.border = "2px solid white";
-          el.style.cursor = "pointer";
-          el.style.transition = "all 0.3s ease";
-          el.style.pointerEvents = "auto";
-
-          if (d.isSelected) {
-            el.style.backgroundColor = "#1B5E2E";
-            el.style.boxShadow = "0 0 12px rgba(27, 94, 46, 0.8)";
-            el.style.width = d.isHQ ? "18px" : "14px";
-            el.style.height = d.isHQ ? "18px" : "14px";
-          } else {
-            el.style.backgroundColor = "#1B5E2E";
-            el.style.boxShadow = "0 0 6px rgba(27, 94, 46, 0.6)";
-          }
-
+          const pin = d as PinDatum;
+          const el = document.createElement("button");
+          el.type = "button";
+          el.dataset.stateId = pin.id;
+          el.setAttribute("aria-label", `View ${pin.name}`);
+          el.style.cssText =
+            "background:none;border:none;padding:0;cursor:pointer;pointer-events:auto;transform:translate(-50%,-50%);";
+          el.innerHTML = `
+            <span style="display:flex;flex-direction:column;align-items:center;gap:5px;">
+              <span data-dot style="
+                display:block;border-radius:9999px;
+                border:2px solid rgba(255,255,255,0.9);
+                transition:all .3s ease;
+              "></span>
+              <span data-label style="
+                font-family:var(--font-jetbrains),monospace;font-size:10px;
+                letter-spacing:.12em;text-transform:uppercase;color:#fff;
+                background:rgba(10,15,11,.85);border:1px solid rgba(47,164,91,.5);
+                padding:2px 8px;border-radius:9999px;white-space:nowrap;
+                transition:opacity .3s ease;
+              ">${pin.name}${pin.isHQ ? " ★" : ""}</span>
+            </span>`;
           el.addEventListener("click", () => {
-            const state = states.find((s) => s.id === d.id);
+            const state = states.find((s) => s.id === pin.id);
             if (state) {
-              onStateSelect(state);
-              setHasInteracted(true);
-              if (autoRotateTimeoutRef.current) {
-                clearTimeout(autoRotateTimeoutRef.current);
-              }
-              if (autoRotateIntervalRef.current) {
-                clearInterval(autoRotateIntervalRef.current);
-              }
-              globeRef.current?.pointOfView(
-                { lat: d.lat, lng: d.lng, altitude: 1.2 },
-                1200
-              );
+              callbacksRef.current.onInteract?.();
+              callbacksRef.current.onStateSelect(state);
             }
           });
-
+          stylePin(el, pin, pin.id === selectedRef.current);
           return el;
         });
 
-      // Get the DOM element
-      const domElement = globe.domElement?.() || (globe as any)._container;
-      
-      if (domElement && containerRef.current) {
-        containerRef.current.appendChild(domElement);
-        globeRef.current = globe;
+      globe.pointOfView({ lat: 9.1, lng: 7.5, altitude: 1.9 }, 0);
 
-        // Set initial point of view
-        globe.pointOfView({ lat: 9.1, lng: 7.5, altitude: 1.9 });
+      const controls = globe.controls();
+      controls.enableZoom = false;
+      controls.autoRotate = !prefersReducedMotion;
+      controls.autoRotateSpeed = 0.5;
 
-        // Configure controls
-        const controls = globe.controls();
-        if (controls) {
-          controls.enableZoom = false;
-          controls.autoRotate = !prefersReducedMotion && !hasInteracted;
-          controls.autoRotateSpeed = 0.5;
-        }
+      // pause auto-rotate on user drag
+      const handleInteraction = () => {
+        controls.autoRotate = false;
+        callbacksRef.current.onInteract?.();
+      };
+      const canvas = container.querySelector("canvas");
+      canvas?.addEventListener("pointerdown", handleInteraction);
+      cleanupFns.push(() =>
+        canvas?.removeEventListener("pointerdown", handleInteraction)
+      );
 
-        // Auto-cycle through states
-        if (!prefersReducedMotion && !hasInteracted) {
-          let stateIndex = 0;
+      // responsive sizing
+      const ro = new ResizeObserver(() => {
+        if (!containerRef.current) return;
+        globe.width(containerRef.current.clientWidth);
+        globe.height(containerRef.current.clientHeight);
+      });
+      ro.observe(container);
+      cleanupFns.push(() => ro.disconnect());
 
-          const cycleStates = () => {
-            if (!hasInteracted && states[stateIndex]) {
-              onStateSelect(states[stateIndex]);
-              const nextState = states[stateIndex];
-              globeRef.current?.pointOfView(
-                { lat: nextState.coords[0], lng: nextState.coords[1], altitude: 1.2 },
-                1200
-              );
-              stateIndex = (stateIndex + 1) % states.length;
-            }
-          };
-
-          autoRotateTimeoutRef.current = setTimeout(() => {
-            cycleStates();
-            autoRotateIntervalRef.current = setInterval(cycleStates, 5000);
-          }, 2000);
-        }
-
-        // Handle user interaction
-        const handleInteraction = () => {
-          if (!hasInteracted) {
-            setHasInteracted(true);
-            if (globeRef.current?.controls()) {
-              globeRef.current.controls().autoRotate = false;
-            }
-            if (autoRotateTimeoutRef.current) {
-              clearTimeout(autoRotateTimeoutRef.current);
-            }
-            if (autoRotateIntervalRef.current) {
-              clearInterval(autoRotateIntervalRef.current);
-            }
-          }
-        };
-
-        const canvas = domElement.querySelector("canvas");
-        if (canvas) {
-          canvas.addEventListener("mousedown", handleInteraction);
-          canvas.addEventListener("touchstart", handleInteraction);
-        }
-
-        // Handle resize
-        const handleResize = () => {
-          if (containerRef.current && globeRef.current) {
-            globeRef.current.width(containerRef.current.clientWidth);
-            globeRef.current.height(containerRef.current.clientHeight);
-          }
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        // Return cleanup function
-        return () => {
-          window.removeEventListener("resize", handleResize);
-          if (canvas) {
-            canvas.removeEventListener("mousedown", handleInteraction);
-            canvas.removeEventListener("touchstart", handleInteraction);
-          }
-          if (autoRotateTimeoutRef.current) {
-            clearTimeout(autoRotateTimeoutRef.current);
-          }
-          if (autoRotateIntervalRef.current) {
-            clearInterval(autoRotateIntervalRef.current);
-          }
-          if (containerRef.current && domElement && domElement.parentNode === containerRef.current) {
-            try {
-              containerRef.current.removeChild(domElement);
-            } catch (e) {
-              // Already removed
-            }
-          }
-        };
-      }
+      globeRef.current = globe;
+      // apply current selection styling once ready
+      updatePinStyles(container, selectedRef.current);
     });
-  }, [states, selectedStateId, onStateSelect, prefersReducedMotion, hasInteracted]);
 
-  return <div ref={containerRef} className="w-full h-full" />;
+    return () => {
+      disposed = true;
+      cleanupFns.forEach((fn) => fn());
+      if (globeRef.current) {
+        globeRef.current._destructor?.();
+        globeRef.current = null;
+      }
+      if (container) container.innerHTML = "";
+    };
+    // init exactly once — selection changes are handled below
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // ---------- selection updates (no re-init) ----------
+  useEffect(() => {
+    selectedRef.current = selectedStateId;
+    const container = containerRef.current;
+    if (container) updatePinStyles(container, selectedStateId);
+
+    const globe = globeRef.current;
+    const state = states.find((s) => s.id === selectedStateId);
+    if (globe && state) {
+      globe.pointOfView(
+        { lat: state.coords[0], lng: state.coords[1], altitude: 1.6 },
+        1200
+      );
+    }
+  }, [selectedStateId, states]);
+
+  return (
+    <div
+      ref={containerRef}
+      className="w-full h-full [&_canvas]:!outline-none"
+      role="img"
+      aria-label="Rotating globe showing NCDC locations across the North Central region"
+    />
+  );
+}
+
+/* ---------- pin styling helpers ---------- */
+
+function stylePin(el: HTMLElement, pin: PinDatum, selected: boolean) {
+  const dot = el.querySelector<HTMLElement>("[data-dot]");
+  const label = el.querySelector<HTMLElement>("[data-label]");
+  if (!dot || !label) return;
+  const base = pin.isHQ ? 16 : 12;
+  const size = selected ? base + 4 : base;
+  dot.style.width = `${size}px`;
+  dot.style.height = `${size}px`;
+  dot.style.backgroundColor = selected ? "#2FA45B" : "#1B5E2E";
+  dot.style.boxShadow = selected
+    ? "0 0 18px 4px rgba(47, 164, 91, 0.75)"
+    : "0 0 8px 2px rgba(27, 94, 46, 0.5)";
+  label.style.opacity = selected ? "1" : "0";
+}
+
+function updatePinStyles(container: HTMLElement, selectedId: string) {
+  container
+    .querySelectorAll<HTMLElement>("[data-state-id]")
+    .forEach((el) => {
+      const id = el.dataset.stateId!;
+      const dot = el.querySelector<HTMLElement>("[data-dot]");
+      if (!dot) return;
+      const isHQ = el.getAttribute("aria-label")?.includes("Nasarawa");
+      stylePin(
+        el,
+        { id, name: "", lat: 0, lng: 0, isHQ: !!isHQ },
+        id === selectedId
+      );
+    });
 }

@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "cosmas-akighir",
+    "name": "Barr. Cosmas Tenenge Akighir",
+    "role": "Chairman, Governing Board",
+    "represents": "Benue State",
+    "verified": true,
+    "bio": "Barrister Cosmas Tenenge Akighir is the pioneer Chairman of the Governing Board of the North Central Development Commission. A lawyer and administrator from Benue State, he was nominated by President Bola Ahmed Tinubu and confirmed by the Senate in June 2025. He leads the 19-member Governing Board inaugurated on 28 August 2025 by the Honourable Minister of Regional Development, Engr. Abubakar Momoh, with a mandate to steer the Commission's strategy for the reconstruction and sustainable development of the North Central region."
+  },
+  {
+    "slug": "cyril-tsenyil",
+    "name": "Dr. Cyril Yilten Tsenyil",
+    "role": "Managing Director / Chief Executive Officer",
+    "represents": "Plateau State",
+    "verified": true,
+    "bio": "Dr. Cyril Yilten Tsenyil is the pioneer Managing Director and Chief Executive Officer of the North Central Development Commission. A distinguished chartered accountant and former Accountant-General of Plateau State, he was confirmed by the Senate in June 2025. He leads the Commission's management, championing a strategy anchored on verified delivery, prudent financial management and a development roadmap aligned with the National Regional Development Policy."
+  },
+  {
+    "slug": "atika-ajanah",
+    "name": "Princess Atika Ajanah",
+    "role": "Executive Director, Projects",
+    "represents": "Kogi State",
+    "verified": true,
+    "bio": "Princess Atika Ajanah serves as Executive Director, Projects of the North Central Development Commission, representing Kogi State. She oversees the planning, execution and monitoring of the Commission's capital projects and intervention programmes across the six states and the FCT."
+  },
+  {
+    "slug": "ed-finance-admin",
+    "name": "Executive Director, Finance & Administration",
+    "role": "Executive Director, Finance & Administration",
+    "represents": "North Central Zone",
+    "verified": false,
+    "bio": "Profile to be published. The Executive Director, Finance & Administration oversees the Commission's financial management, budgeting and corporate administration."
+  },
+  {
+    "slug": "ed-corporate-services",
+    "name": "Executive Director, Corporate Services",
+    "role": "Executive Director, Corporate Services",
+    "represents": "North Central Zone",
+    "verified": false,
+    "bio": "Profile to be published. The Executive Director, Corporate Services oversees human resources, procurement and corporate support services of the Commission."
+  },
+  {
+    "slug": "board-members",
+    "name": "Members of the Governing Board",
+    "role": "Non-Executive Members",
+    "represents": "States of the Federation",
+    "verified": false,
+    "bio": "In line with the NCDC (Establishment) Act 2024, the Governing Board includes members representing the states of the North Central zone and other geopolitical zones of the federation. The 19-member Board was inaugurated on 28 August 2025. Full member profiles will be published here."
+  }
+]

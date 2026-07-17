@@ -7,7 +7,7 @@ const features = [
     number: "01",
     title: "Rebuild & Resettle",
     description: "Restore livelihoods and communities affected by insecurity. We coordinate rehabilitation, resettlement, and recovery programmes across the region.",
-    stats: { value: "18M+", label: "IDPs assisted" },
+    stats: { value: "₦140bn", label: "2026 capital programme" },
   },
   {
     number: "02",
@@ -217,6 +217,26 @@ export function FeaturesSection() {
               <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent" />
             </div>
           </div>
+
+          {/* Remaining mandate cards */}
+          {features.slice(1).map((feature, index) => (
+            <div
+              key={feature.number}
+              className={`lg:col-span-4 relative bg-white border border-primary/20 p-8 lg:p-10 group transition-all duration-700 hover:border-primary ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+              }`}
+              style={{ transitionDelay: isVisible ? `${(index + 1) * 100}ms` : "0ms" }}
+              onMouseEnter={() => setActiveFeature(index + 1)}
+            >
+              <span className="font-mono text-sm text-primary font-medium">{feature.number}</span>
+              <h3 className="text-2xl lg:text-3xl font-display mt-4 mb-4 text-foreground group-hover:translate-x-2 transition-transform duration-500">
+                {feature.title}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                {feature.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

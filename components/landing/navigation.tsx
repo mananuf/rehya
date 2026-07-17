@@ -1,19 +1,20 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "About",         href: "#about"         },
-  { name: "What We Do",    href: "#mandate"       },
-  { name: "Projects",      href: "#focus-areas"   },
-  { name: "States",        href: "#states"        },
-  { name: "Newsroom",      href: "#newsroom"      },
-  { name: "Resources",     href: "#resources"     },
+  { name: "About",         href: "/about"       },
+  { name: "What We Do",    href: "/what-we-do"  },
+  { name: "Projects",      href: "/projects"    },
+  { name: "States",        href: "/states"      },
+  { name: "Newsroom",      href: "/newsroom"    },
+  { name: "Resources",     href: "/resources"   },
 ];
 
-export function Navigation() {
+export function Navigation({ solid = false }: { solid?: boolean }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -46,7 +47,7 @@ export function Navigation() {
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group">
             <img 
               src="/ncdc-seal.png" 
               alt="NCDC" 
@@ -56,39 +57,40 @@ export function Navigation() {
               <span className={`font-display font-bold tracking-tight transition-all duration-500 ${isScrolled ? "text-xs text-foreground" : "text-sm text-foreground"}`}>NCDC</span>
               <span className={`font-mono text-[8px] leading-none transition-all duration-500 text-muted-foreground`}>Federal Commission</span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
-                className={`text-sm transition-colors duration-300 relative group ${isScrolled ? "text-foreground/70 hover:text-foreground" : "text-white/70 hover:text-white"}`}
+                className={`text-sm transition-colors duration-300 relative group ${isScrolled || solid ? "text-foreground/70 hover:text-foreground" : "text-white/70 hover:text-white"}`}
               >
                 {link.name}
-                <span className={`absolute -bottom-1 left-0 w-0 h-px transition-all duration-300 group-hover:w-full ${isScrolled ? "bg-foreground" : "bg-white"}`} />
-              </a>
+                <span className={`absolute -bottom-1 left-0 w-0 h-px transition-all duration-300 group-hover:w-full ${isScrolled || solid ? "bg-foreground" : "bg-white"}`} />
+              </Link>
             ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className={`transition-all duration-500 text-xs font-medium ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-foreground/70 hover:text-foreground"}`}>
+            <Link href="/contact" className={`transition-all duration-500 text-xs font-medium ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-foreground/70 hover:text-foreground"}`}>
               Contact
-            </a>
+            </Link>
             <Button
               size="sm"
+              asChild
               className={`rounded-full transition-all duration-500 bg-primary hover:bg-primary/90 text-white px-6 h-8 text-xs font-medium`}
             >
-              Report a Project
+              <Link href="/report">Report a Project</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 transition-colors duration-500 ${isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white"}`}
+            className={`md:hidden p-2 transition-colors duration-500 ${isScrolled || isMobileMenuOpen || solid ? "text-foreground" : "text-white"}`}
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -114,7 +116,7 @@ export function Navigation() {
           {/* Navigation Links */}
           <div className="flex-1 flex flex-col justify-center gap-8">
             {navLinks.map((link, i) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -126,7 +128,7 @@ export function Navigation() {
                 style={{ transitionDelay: isMobileMenuOpen ? `${i * 75}ms` : "0ms" }}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
           
@@ -140,16 +142,18 @@ export function Navigation() {
           >
             <Button 
               variant="outline" 
+              asChild
               className="flex-1 rounded-full h-14 text-base border-border text-foreground"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Contact
+              <Link href="/contact">Contact</Link>
             </Button>
             <Button 
+              asChild
               className="flex-1 bg-primary text-white rounded-full h-14 text-base hover:bg-primary/90"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Report a Project
+              <Link href="/report">Report a Project</Link>
             </Button>
           </div>
         </div>

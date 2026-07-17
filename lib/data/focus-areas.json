@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "infrastructure",
+    "name": "Infrastructure & Connectivity",
+    "short": "Roads, bridges and regional links that connect farms to markets and states to each other.",
+    "description": "The Commission plans and delivers critical infrastructure across the region — rural feeder roads, bridges, and regional trade corridors — prioritising the routes that unlock agricultural markets and reconnect communities cut off by insecurity or flooding.",
+    "programmes": [
+      "Rural feeder-roads programme (farm-to-market corridors)",
+      "Regional trade-corridor studies and rehabilitation",
+      "Bridges and river-crossing reconstruction"
+    ]
+  },
+  {
+    "slug": "agriculture",
+    "name": "Agriculture & Food Security",
+    "short": "Making the region's farming potential the engine of national food security.",
+    "description": "The North Central zone is Nigeria's food basket. The Commission supports agro-industrial clusters, incubation centres, irrigation and value-chain infrastructure so the region's produce feeds the nation and creates jobs at home.",
+    "programmes": [
+      "Agribusiness incubation centres",
+      "Agro-industrial cluster development",
+      "Irrigation and dry-season farming support"
+    ]
+  },
+  {
+    "slug": "peace-security",
+    "name": "Peace, Security & Rehabilitation",
+    "short": "Resettling displaced communities and rebuilding what conflict destroyed.",
+    "description": "A core statutory mandate: the resettlement, rehabilitation, reintegration and reconstruction of roads, houses and business premises for communities affected by banditry, farmer-herder conflict and other insecurity — working with traditional rulers, community leaders and security agencies on peacebuilding and conflict prevention.",
+    "programmes": [
+      "Resettlement & reconstruction of conflict-affected communities",
+      "Peacebuilding partnerships (traditional institutions, SPRiNG programme)",
+      "Logistical and strategic support to security agencies"
+    ]
+  },
+  {
+    "slug": "health",
+    "name": "Health",
+    "short": "Strengthening primary healthcare where communities need it most.",
+    "description": "The Commission invests in primary healthcare centres, medical outreach and health-system strengthening across underserved LGAs, coordinating with state ministries and development partners.",
+    "programmes": [
+      "Primary healthcare centre rehabilitation",
+      "Medical outreach missions",
+      "Maternal and child health support"
+    ]
+  },
+  {
+    "slug": "education",
+    "name": "Education & Human Capital",
+    "short": "Classrooms, skills and scholarships for the region's young majority.",
+    "description": "From rebuilding classrooms to digital skills and scholarship programmes, the Commission develops the human capital of a region where most citizens are under 30.",
+    "programmes": [
+      "School rehabilitation and classroom construction",
+      "Scholarship and bursary schemes",
+      "Teacher development support"
+    ]
+  },
+  {
+    "slug": "solid-minerals",
+    "name": "Solid Minerals Development",
+    "short": "Responsible mining that benefits host communities.",
+    "description": "The zone holds some of Nigeria's richest mineral belts — lithium, tin, barite, iron ore, coal. The Commission works with the Federal Ministry of Solid Minerals and state governments to develop community-based mining cooperatives, promote responsible practices and keep value in the region. The Act also mandates NCDC to assess and report on projects run by mining and other companies operating in the zone.",
+    "programmes": [
+      "Community-based mining cooperatives",
+      "Responsible-mining partnerships with FMSD and states",
+      "Statutory assessment of extractive-sector projects"
+    ]
+  },
+  {
+    "slug": "ecology",
+    "name": "Ecology & Erosion Control",
+    "short": "Confronting flooding, erosion and environmental degradation.",
+    "description": "Tackling the ecological challenges named in the Commission's founding Act — gully erosion, seasonal flooding along the Niger-Benue system, deforestation and land degradation.",
+    "programmes": [
+      "Flood-resilience works along the Niger–Benue valleys",
+      "Gully-erosion control interventions",
+      "Watershed and reforestation programmes"
+    ]
+  },
+  {
+    "slug": "youth-innovation",
+    "name": "Youth, Women & Innovation",
+    "short": "Empowerment, digital skills and inclusion for the region's future.",
+    "description": "Empowerment programmes targeting youths, women and persons with disabilities, plus a planned regional innovation hub promoting creativity, digital skills and job creation.",
+    "programmes": [
+      "Regional innovation hub (digital skills & job creation)",
+      "Women and PWD empowerment schemes",
+      "Youth enterprise support"
+    ]
+  }
+]

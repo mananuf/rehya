@@ -1,0 +1,30 @@
+{
+  "name": "North Central Development Commission",
+  "shortName": "NCDC",
+  "tagline": "Rebuilding the heart of Nigeria",
+  "establishment": "Established by the North Central Development Commission (Establishment) Act, 2024",
+  "hq": {
+    "city": "Lafia",
+    "state": "Nasarawa State",
+    "address": "NCDC Headquarters, Lafia, Nasarawa State, Nigeria"
+  },
+  "stats": {
+    "states": 6,
+    "locations": 7,
+    "lgas": 121,
+    "population": "20M+",
+    "budget2026": "₦140bn"
+  },
+  "email": "info@ncdc.gov.ng",
+  "phone": "+234 (0) 700 000 0000",
+  "socials": {
+    "x": "https://x.com/ncdcnigeria",
+    "facebook": "https://facebook.com/ncdcnigeria",
+    "linkedin": "https://linkedin.com/company/ncdcnigeria"
+  },
+  "presidentQuote": {
+    "text": "The regional development commissions are our vehicle for taking development to every zone — closing infrastructure gaps, healing communities affected by insecurity, and unlocking the vast potential of our people.",
+    "author": "President Bola Ahmed Tinubu, GCFR",
+    "note": "On the establishment of the regional development commissions"
+  }
+}

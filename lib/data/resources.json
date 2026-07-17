@@ -1,0 +1,64 @@
+[
+  {
+    "title": "NCDC (Establishment) Act, 2024",
+    "category": "Act & Legal",
+    "description": "The North Central Development Commission (Establishment) Act, 2024 — the Commission's founding statute, establishing its mandate, governance and funding.",
+    "file": "/documents/ncdc-establishment-act-2024.pdf",
+    "date": "2024-07-24",
+    "external": false
+  },
+  {
+    "title": "Strategic Development Roadmap (Summary)",
+    "category": "Strategy & Planning",
+    "description": "Summary of the Commission's Strategic Development Roadmap, aligned with the National Regional Development Policy (NRDP) 2026–2030. Full document pending publication.",
+    "file": null,
+    "date": "2026-05-01",
+    "external": false,
+    "pending": true
+  },
+  {
+    "title": "2026 Budget Overview",
+    "category": "Budgets",
+    "description": "Overview of the Commission's ₦140 billion 2026 appropriation — approximately 86% capital expenditure — as approved by the National Assembly. Detailed budget publication pending.",
+    "file": null,
+    "date": "2026-02-16",
+    "external": false,
+    "pending": true
+  },
+  {
+    "title": "Freedom of Information (FOI) Guide",
+    "category": "Policies",
+    "description": "How to make a Freedom of Information request to the Commission under the FOI Act 2011.",
+    "file": "/foi",
+    "date": "2026-01-15",
+    "external": false,
+    "isPage": true
+  },
+  {
+    "title": "Procurement Policy Statement",
+    "category": "Policies",
+    "description": "The Commission's commitment to open, competitive procurement in line with the Public Procurement Act 2007. Tenders are published on the Procurement page.",
+    "file": "/procurement",
+    "date": "2026-01-15",
+    "external": false,
+    "isPage": true
+  },
+  {
+    "title": "Maiden Stakeholders Summit — Communiqué",
+    "category": "Reports",
+    "description": "Communiqué of the maiden North Central Regional Stakeholders Development Summit, Lafia. Publication pending.",
+    "file": null,
+    "date": "2026-06-10",
+    "external": false,
+    "pending": true
+  },
+  {
+    "title": "Official Logo & Brand Assets",
+    "category": "Brand",
+    "description": "Official NCDC logo files and brand guidelines for media and partners. Publication pending.",
+    "file": null,
+    "date": "2026-01-15",
+    "external": false,
+    "pending": true
+  }
+]

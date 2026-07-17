@@ -5,28 +5,28 @@ import { useEffect, useRef } from "react";
 
 const footerLinks = {
   Commission: [
-    { name: "Our Mandate", href: "#mandate" },
-    { name: "Focus Areas", href: "#focus-areas" },
-    { name: "Leadership", href: "#leadership" },
-    { name: "About NCDC", href: "#about" },
+    { name: "About NCDC", href: "/about" },
+    { name: "Board & Management", href: "/about/leadership" },
+    { name: "What We Do", href: "/what-we-do" },
+    { name: "Careers", href: "/careers" },
   ],
   Transparency: [
-    { name: "FOI Requests", href: "#" },
-    { name: "Budgets & Documents", href: "#" },
-    { name: "Report a Project", href: "#" },
-    { name: "Establishment Act", href: "https://placng.org/i/wp-content/uploads/2025/05/North-Central-Development-Commision-Establishment-Act-2024.pdf" },
+    { name: "FOI Requests", href: "/foi" },
+    { name: "Procurement & Tenders", href: "/procurement" },
+    { name: "Report a Project", href: "/report" },
+    { name: "Establishment Act", href: "/about/act" },
   ],
   "Our Work": [
-    { name: "Newsroom", href: "#newsroom" },
-    { name: "Resources", href: "#resources" },
-    { name: "Contact Us", href: "#" },
-    { name: "Careers", href: "#" },
+    { name: "Projects", href: "/projects" },
+    { name: "Newsroom", href: "/newsroom" },
+    { name: "Resources", href: "/resources" },
+    { name: "Contact Us", href: "/contact" },
   ],
   States: [
-    { name: "Benue", href: "#" },
-    { name: "Kogi", href: "#" },
-    { name: "Kwara", href: "#" },
-    { name: "Nasarawa · Plateau · Niger · FCT", href: "#" },
+    { name: "Benue", href: "/states/benue" },
+    { name: "Kogi", href: "/states/kogi" },
+    { name: "Kwara", href: "/states/kwara" },
+    { name: "Nasarawa · Plateau · Niger · FCT", href: "/states" },
   ],
 };
 
@@ -166,9 +166,9 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4 text-xs text-white/50">
-            <span>&copy; 2025 NCDC — an agency of the Federal Republic of Nigeria</span>
+            <span>&copy; 2026 NCDC — an agency of the Federal Republic of Nigeria</span>
             <span className="text-white/30">·</span>
-            <a href="#" className="hover:text-white transition-colors">Image credits — Wikimedia Commons</a>
+            <a href="/credits" className="hover:text-white transition-colors">Image credits — Wikimedia Commons</a>
           </div>
 
           <div className="flex items-center gap-2 text-sm text-white/60">
