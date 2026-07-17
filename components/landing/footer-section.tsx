@@ -114,7 +114,7 @@ export function FooterSection() {
             {/* Brand Column */}
             <div className="col-span-2">
               <a href="#" className="inline-flex items-center gap-3 mb-6">
-                <img src="/ncdc-logo.png" alt="NCDC" className="h-10" />
+                <img src="/ncdc-seal.png" alt="NCDC" className="h-12" />
                 <div className="flex flex-col">
                   <span className="text-lg font-display text-white font-bold">NCDC</span>
                   <span className="text-xs text-white/60 font-mono leading-none">Federal Commission</span>

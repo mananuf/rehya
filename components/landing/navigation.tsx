@@ -46,15 +46,15 @@ export function Navigation() {
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
+          <a href="#" className="flex items-center gap-2 group">
             <img 
-              src="/ncdc-logo.png" 
+              src="/ncdc-seal.png" 
               alt="NCDC" 
-              className={`transition-all duration-500 ${isScrolled ? "h-8" : "h-10"}`}
+              className={`transition-all duration-500 ${isScrolled ? "h-7" : "h-10"}`}
             />
             <div className="hidden sm:flex flex-col">
-              <span className={`font-display font-bold tracking-tight transition-all duration-500 ${isScrolled ? "text-sm text-foreground" : "text-base text-foreground"}`}>NCDC</span>
-              <span className={`font-mono text-[10px] leading-none transition-all duration-500 text-muted-foreground`}>Federal Commission</span>
+              <span className={`font-display font-bold tracking-tight transition-all duration-500 ${isScrolled ? "text-xs text-foreground" : "text-sm text-foreground"}`}>NCDC</span>
+              <span className={`font-mono text-[8px] leading-none transition-all duration-500 text-muted-foreground`}>Federal Commission</span>
             </div>
           </a>
 
