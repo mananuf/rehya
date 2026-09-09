@@ -21,15 +21,27 @@ export const NEWS: NewsArticle[] = [
     type: "news",
     tag: "State Rollout",
     excerpt:
-      "The Plateau State Coordinating Unit of the Renewed Hope Youth Engagement was inaugurated in Jos, with the state government pledging support for youth empowerment and inclusive governance.",
+      "The Plateau State Coordinating Unit of the Renewed Hope Youth Engagement was inaugurated in Jos under State Coordinator Manji Wilson, with the state government pledging support for youth empowerment and inclusive governance.",
     body: [
       {
         type: "p",
-        text: "The Plateau State Coordinating Unit of the Renewed Hope Youth Engagement was inaugurated in Jos on 5 August 2026, continuing the programme's rollout of coordinating structures across the federation.",
+        text: "The Plateau State Coordinating Unit of the Renewed Hope Youth Engagement was inaugurated in Jos on Wednesday 5 August 2026, continuing the programme's rollout of coordinating structures across the federation.",
       },
       {
         type: "p",
-        text: "At the inauguration, the state government reaffirmed its commitment to youth empowerment and inclusive governance, while the programme's leadership set out the administration's interventions in student financing, welfare for security personnel, allocations to states and efforts to restore investor confidence.",
+        text: "The unit was inaugurated by Deputy Governor Mrs. Josephine Piyo, representing Governor Caleb Manasseh Mutfwang, who reaffirmed the state government's commitment to youth empowerment and inclusive governance and pledged its support for the programme.",
+      },
+      {
+        type: "p",
+        text: "Manji Wilson leads the Plateau State Coordinating Unit as State Coordinator. Addressing young people at the ceremony, he described them as critical stakeholders in Nigeria's democratic future.",
+      },
+      {
+        type: "p",
+        text: "\u201cYou know what happened in 2023, but 2027 is going to be different. We are going to play a very significant role as we move ahead,\u201d he said, adding that Plateau people would deliver the desired votes for President Bola Ahmed Tinubu.",
+      },
+      {
+        type: "p",
+        text: "The National Coordinator, Hon. Abdulazeez Abubakar Kaka, set out the administration's interventions in student financing, welfare for security personnel, allocations to states and efforts to restore investor confidence.",
       },
       {
         type: "p",
@@ -71,7 +83,7 @@ export const NEWS: NewsArticle[] = [
       },
       {
         type: "p",
-        text: "Fidelis Unongo leads the Benue State Coordinating Unit, which covers the state's 23 local government areas.",
+        text: "The Benue State Coordinating Unit covers the state's 23 local government areas, working down through local government and ward-level coordinators.",
       },
     ],
   },

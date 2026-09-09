@@ -18,8 +18,11 @@ Safe to keep as-is; re-check dates before launch.
 | Fact | Where it appears | Source |
 |---|---|---|
 | Programme name: Renewed Hope Youth Engagement (RHYE) | throughout | Blueprint, Nigeria Star News |
-| National Coordinator: **Abdulazeez Abubakar Kaka** | `leadership.json`, FAQs | Blueprint; also printed as "Abdurazez" elsewhere — spelling needs confirming |
-| Benue State Coordinator: **Fidelis Unongo** | `leadership.json` | Blueprint |
+| National Coordinator: **Hon. Abdulazeez Abubakar Kaka** | `leadership.json`, FAQs, news | Matthew Tegha (gives the "Hon. Abdulazeez" form); Blueprint prints "Abdurazez" |
+| Plateau State Coordinator: **Manji Wilson** | `leadership.json`, FAQs, news | Matthew Tegha, Nigeria Star News (both render it "Wilson Manji") |
+| Manji Wilson is also Chief Technical Adviser on Development Partnerships, Strategic Linkages & Diaspora Engagements to the Plateau Governor; state Point of Contact for the Open Government Partnership; selected for France's 2026 Future Leaders Invitation Programme | `leadership.json` | Premium Times, Freedom Online, OGP |
+| Plateau unit inaugurated by Deputy Gov. **Mrs. Josephine Piyo** for Gov. **Caleb Manasseh Mutfwang**, Wed 5 Aug 2026, Jos | `leadership.json`, news | Matthew Tegha |
+| Manji Wilson's quoted remarks ("2027 is going to be different…", "critical stakeholders in Nigeria's democratic future") | `news-data.ts` | Matthew Tegha — published quotes, not paraphrase |
 | Benue State Executive Committee inaugurated by Gov. Hyacinth Alia, represented by Deputy Gov. Dr. Sam Ode | `news-data.ts`, `states.json` | Blueprint |
 | Plateau State Coordinating Unit inaugurated in Jos, **5 August 2026** | `news-data.ts`, `projects.json`, `states.json` | Nigeria Star News, Matthew Tegha |
 | Mandate wording: young people as "active contributors to development, rather than being mere beneficiaries" | `site.json`, charter, about | Blueprint |
@@ -34,6 +37,12 @@ Safe to keep as-is; re-check dates before launch.
 | APC Deputy National Secretary **Prof. AbdulKarim Abubakar Kana** | `leadership.json` | Premium Times |
 | 36 states + FCT, **774 LGAs**, **8,809 wards**, 6 geopolitical zones | throughout | public record (LGA counts sum to exactly 774 — validated in build) |
 | State capitals, LGA counts, coordinates, official state slogans | `states.json` | public record |
+
+### Name ordering — Manji Wilson
+
+Published reporting renders him **"Wilson Manji"**; LinkedIn and Premium Times
+headlines treat **Manji** as the surname. The site uses **"Manji Wilson"** at the
+client's direction. Worth confirming with him which form he wants in print.
 
 ### A note on the dignitaries section
 
@@ -52,7 +61,11 @@ with the actual designation — don't just delete it.
 ### Contact details (`lib/data/site.json`) — highest priority
 - `email: info@rhye.ng` — **domain not verified as owned by the programme**
 - `phone: +234 (0) 700 000 0000` — dummy
-- `socials` — `x/facebook/instagram: rhyenigeria` handles are **guesses, not verified accounts**
+- `socials` — **now the real accounts found in search**, replacing the earlier invented
+  handles: X [@RHYEngagement](https://x.com/RHYEngagement) (joined Aug 2025) and Instagram
+  [@rhyengagement](https://www.instagram.com/rhyengagement/). Two caveats: the **Facebook**
+  URL is still extrapolated from the same handle and is **unverified**, and a second
+  Instagram account (`@renewedhope_youthengagement`) also exists — confirm which is official.
 - `hq.address` — "RHYE National Secretariat, Abuja" is plausible but the actual address is unknown
 - `NEXT_PUBLIC_SITE_URL` — **not** hardcoded to a placeholder domain. `lib/site-url.ts`
   resolves it in order: `NEXT_PUBLIC_SITE_URL` → `VERCEL_PROJECT_PRODUCTION_URL` →
@@ -76,7 +89,8 @@ two inauguration entries (Plateau, Benue) correspond to real events; the other
 assignments.
 
 ### Newsroom (`lib/news-data.ts`)
-- Real basis: `plateau-coordinating-unit-inaugurated`, `benue-executive-committee-inaugurated`
+- Real basis: `plateau-coordinating-unit-inaugurated` (now carries the confirmed names,
+  date and published quotes), `benue-executive-committee-inaugurated`
 - **Invented:** the other six articles, including the fraud-warning notice.
   The fraud notice states a policy (participation is free) — confirm the
   programme actually holds that policy before publishing it as a notice.
