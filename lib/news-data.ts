@@ -14,186 +14,216 @@ export type NewsArticle = {
 
 export const NEWS: NewsArticle[] = [
   {
-    slug: "roadmap-summit",
+    slug: "plateau-coordinating-unit-inaugurated",
     title:
-      "Board adopts Strategic Development Roadmap ahead of maiden regional summit",
-    date: "2026-06-10",
+      "Plateau State Coordinating Unit inaugurated in Jos as national rollout continues",
+    date: "2026-08-05",
     type: "news",
-    tag: "Strategy",
+    tag: "State Rollout",
     excerpt:
-      "The Governing Board has approved the Commission's Strategic Development Roadmap, to be unveiled at the maiden North Central Regional Stakeholders Development Summit and aligned with the NRDP 2026–2030.",
+      "The Plateau State Coordinating Unit of the Renewed Hope Youth Engagement was inaugurated in Jos, with the state government pledging support for youth empowerment and inclusive governance.",
     body: [
       {
         type: "p",
-        text: "The Governing Board of the North Central Development Commission has approved the Commission's Strategic Development Roadmap, the master framework that will guide its interventions with clear priorities, timelines and performance indicators.",
+        text: "The Plateau State Coordinating Unit of the Renewed Hope Youth Engagement was inaugurated in Jos on 5 August 2026, continuing the programme's rollout of coordinating structures across the federation.",
       },
       {
         type: "p",
-        text: "The Roadmap is being aligned with the National Regional Development Policy (NRDP) 2026–2030 and will be unveiled at the maiden North Central Regional Stakeholders Development Summit, bringing together state governments, the FCT Administration, traditional institutions, civil society and development partners.",
+        text: "At the inauguration, the state government reaffirmed its commitment to youth empowerment and inclusive governance, while the programme's leadership set out the administration's interventions in student financing, welfare for security personnel, allocations to states and efforts to restore investor confidence.",
       },
-      { type: "p", text: "Key pillars of the Roadmap include:" },
+      {
+        type: "p",
+        text: "The new unit is responsible for mobilisation across Plateau's 17 local government areas, working down through local government and ward-level coordinators.",
+      },
+      { type: "p", text: "The unit's immediate priorities are:" },
       {
         type: "ul",
         items: [
-          "Agriculture and agro-industrialisation as the region's economic engine",
-          "Peace, security support and the rehabilitation of conflict-affected communities",
-          "Infrastructure and regional connectivity",
-          "Responsible solid-minerals development",
-          "Human capital — health, education, and youth and women's empowerment",
-          "Ecology, flood resilience and erosion control",
+          "Induction of local government and ward coordinators across all 17 LGAs",
+          "Civic education and voter-awareness activity in markets, motor parks and campuses",
+          "Peace advocacy with religious and traditional institutions",
+          "Signposting young people to federal skills and student financing schemes",
         ],
-      },
-      {
-        type: "p",
-        text: "The Commission invites stakeholders across the region to engage with the Roadmap process through its state liaison offices and this website.",
       },
     ],
   },
   {
-    slug: "mining-jobs-partnership",
-    title: "FG and NCDC move to boost North Central mining and create jobs",
-    date: "2026-04-13",
+    slug: "benue-executive-committee-inaugurated",
+    title:
+      "Benue State Executive Committee inaugurated with charge to reach every community",
+    date: "2026-07-28",
     type: "news",
-    tag: "Solid Minerals",
+    tag: "State Rollout",
     excerpt:
-      "The Commission is partnering with the Federal Ministry of Solid Minerals Development and state governments to develop community-based mining cooperatives across the zone's mineral belts.",
+      "Governor Hyacinth Alia, represented by Deputy Governor Dr. Sam Ode, inaugurated the Benue State Executive Committee with a charge to build an inclusive, results-driven structure across the state.",
     body: [
       {
         type: "p",
-        text: "The Federal Government and the North Central Development Commission are working together to unlock the North Central zone's solid-minerals potential and create jobs for host communities.",
+        text: "The Benue State Executive Committee of the Renewed Hope Youth Engagement was inaugurated in Makurdi by Governor Hyacinth Iormem Alia, represented by Deputy Governor Dr. Sam Ode.",
       },
       {
         type: "p",
-        text: "Under the partnership with the Federal Ministry of Solid Minerals Development and state governments, the Commission will:",
-      },
-      {
-        type: "ul",
-        items: [
-          "Support the formation of community-based mining cooperatives, formalising artisanal miners with training, safety standards and equipment",
-          "Promote responsible and sustainable mining practices across the zone's lithium, tin, barite, iron-ore and coal belts",
-          "Strengthen local content and value addition so mineral wealth benefits the communities that host it",
-        ],
+        text: "Officials were charged to build an inclusive and results-driven structure that would reach communities, markets, religious institutions and young people throughout the state, and to mobilise young Benue people for active participation in governance.",
       },
       {
         type: "p",
-        text: "The Commission also reiterated its statutory mandate to assess and report on projects executed in the zone by mineral-extracting and mining companies, ensuring extractive activity translates into visible community development.",
+        text: "The programme's standing message on conduct was repeated at the ceremony: active participation in politics, and a firm rejection of violence, hate speech, intimidation and misinformation.",
+      },
+      {
+        type: "p",
+        text: "Fidelis Unongo leads the Benue State Coordinating Unit, which covers the state's 23 local government areas.",
       },
     ],
   },
   {
-    slug: "strategy-retreat-spring",
-    title: "NCDC holds strategy retreat with SPRiNG programme in Lafia",
-    date: "2026-03-12",
-    type: "news",
-    tag: "Partnerships",
-    excerpt:
-      "A two-day retreat organised with the UK FCDO-funded Strengthening Peace and Resilience in Nigeria (SPRiNG) programme shaped the Commission's approach to peacebuilding and development planning.",
-    body: [
-      {
-        type: "p",
-        text: "The Commission held a two-day strategy retreat in Lafia in collaboration with the Strengthening Peace and Resilience in Nigeria (SPRiNG) programme, funded by the United Kingdom's Foreign, Commonwealth and Development Office (FCDO).",
-      },
-      {
-        type: "p",
-        text: "The retreat brought the Governing Board and management together with development partners to shape the Commission's strategic direction, with sessions on:",
-      },
-      {
-        type: "ul",
-        items: [
-          "Conflict-sensitive development planning and peacebuilding",
-          "Designing empowerment programmes for youths, women and persons with disabilities",
-          "Sustainable, community-based approaches to solid-minerals development",
-          "Monitoring, evaluation and evidence-based delivery",
-        ],
-      },
-      {
-        type: "p",
-        text: "Outcomes from the retreat feed directly into the Commission's Strategic Development Roadmap, which is being aligned with the National Regional Development Policy (NRDP) 2026–2030.",
-      },
-    ],
-  },
-  {
-    slug: "senate-approves-2026-budget",
-    title: "Senate approves ₦140 billion 2026 budget for the Commission",
-    date: "2026-02-16",
-    type: "news",
-    tag: "Budget",
-    excerpt:
-      "The National Assembly has approved the Commission's ₦140 billion appropriation for the 2026 fiscal year — about 86% of it capital expenditure — and urged priority focus on agriculture and security.",
-    body: [
-      {
-        type: "p",
-        text: "The Senate has approved a ₦140 billion budget for the North Central Development Commission for the 2026 fiscal year, comprising approximately 86% capital expenditure with the balance for personnel and overheads.",
-      },
-      {
-        type: "p",
-        text: "In adopting the report of the Senate Committee on the North Central Development Commission, lawmakers urged the Commission to give agriculture “pride of place” in its interventions, leveraging the region's vast farming potential, and to provide logistical and strategic support to security agencies working to stabilise affected communities.",
-      },
-      {
-        type: "p",
-        text: "The Senate also noted the gap between the Commission's approved budget and its current monthly takeoff releases, and called on the Federal Government to improve funding flows so the Commission can deliver its capital programme.",
-      },
-      {
-        type: "p",
-        text: "The Commission thanked the National Assembly for its support and reaffirmed its commitment to transparent, verifiable project delivery across the six states and the FCT.",
-      },
-    ],
-  },
-  {
-    slug: "lafia-headquarters",
-    title: "Commission takes possession of Lafia headquarters",
-    date: "2025-10-06",
+    slug: "national-ward-mobiliser-induction-opens",
+    title: "National ward mobiliser induction opens across the six zones",
+    date: "2026-09-01",
     type: "announcement",
-    tag: "Announcement",
+    tag: "Structure",
     excerpt:
-      "The Nasarawa State Government has donated an office complex in Lafia to serve as the Commission's national headquarters.",
+      "The National Secretariat has opened a rolling induction for ward-level mobilisers, cascading through zonal and state coordinating units toward all 8,809 wards.",
     body: [
       {
         type: "p",
-        text: "The North Central Development Commission has taken possession of its national headquarters in Lafia, Nasarawa State, following the donation of an office complex by the Nasarawa State Government.",
+        text: "The National Secretariat has opened a rolling induction programme for ward-level mobilisers, running through the zonal coordinators and state coordinating units.",
       },
       {
         type: "p",
-        text: "The Commission expresses its profound gratitude to the Government and people of Nasarawa State for this contribution to the take-off of the Commission.",
+        text: "The induction covers the programme's eight pillars, the conduct expected of every coordinator, and the practical work of organising at ward level — the smallest unit of the programme's structure, of which there are 8,809 nationwide.",
       },
       {
         type: "p",
-        text: "Management and secretariat operations are now domiciled at the Lafia headquarters, while liaison offices across the member states and the Federal Capital Territory are being established in phases.",
-      },
-      {
-        type: "p",
-        text: "All official correspondence should be directed to the Commission's headquarters in Lafia or through the contact channels on this website.",
+        text: "State coordinating units will publish induction schedules for their local government areas. Participation is free; the programme charges no fee for membership, registration or appointment to any position.",
       },
     ],
   },
   {
-    slug: "board-inauguration",
-    title: "Governing Board of the NCDC inaugurated in Abuja",
-    date: "2025-08-28",
+    slug: "peace-pledge-campaign-launch",
+    title: "National Peace Pledge Campaign launched against political violence",
+    date: "2026-08-22",
     type: "news",
-    tag: "Governance",
+    tag: "Peace",
     excerpt:
-      "The 19-member pioneer Governing Board of the North Central Development Commission has been inaugurated, with Barr. Cosmas Tenenge Akighir as Chairman and Dr. Cyril Yiltsen Tsenyil as Managing Director/CEO.",
+      "A nationwide pledge campaign asks young Nigerians to commit publicly against political violence, hate speech, intimidation and misinformation, anchored by religious and traditional institutions.",
     body: [
       {
         type: "p",
-        text: "The 19-member pioneer Governing Board of the North Central Development Commission was inaugurated on 28 August 2025 by the Honourable Minister of Regional Development, Engr. Abubakar Momoh, following Senate confirmation of the nominees in June.",
+        text: "The programme has launched a National Peace Pledge Campaign asking young Nigerians to commit publicly against political violence, hate speech, intimidation and the spread of misinformation.",
       },
       {
         type: "p",
-        text: "Barr. Cosmas Tenenge Akighir (Benue State) serves as Chairman of the Governing Board, with Dr. Cyril Yiltsen Tsenyil (Plateau State), a chartered accountant and former Accountant-General of Plateau State, as pioneer Managing Director and Chief Executive Officer.",
+        text: "The campaign is anchored in each participating state by religious and traditional institutions, with state coordinating units convening pledge ceremonies at local government level.",
       },
       {
         type: "p",
-        text: "The Board's composition follows the NCDC (Establishment) Act 2024, with executive directors and members representing the states of the North Central zone and the other geopolitical zones of the federation.",
+        text: "Peace and non-violence is one of the programme's eight pillars. The charge against violence and hate speech has been repeated at every state inauguration to date.",
+      },
+    ],
+  },
+  {
+    slug: "student-loan-clinics-expand",
+    title: "Student loan application clinics expand to campuses in ten states",
+    date: "2026-08-14",
+    type: "news",
+    tag: "Education",
+    excerpt:
+      "Campus clinics helping students complete federal student loan applications are expanding, run alongside institutional student affairs offices.",
+    body: [
+      {
+        type: "p",
+        text: "Application clinics for the federal student loan scheme are expanding to campuses in ten states, run by state coordinating units alongside institutional student affairs offices.",
       },
       {
         type: "p",
-        text: "Speaking at the inauguration, the Minister charged the Board to deliver visible, verifiable development to the people of the North Central region, describing the Commission as a key vehicle of the administration's regional development agenda.",
+        text: "The clinics do not administer the scheme and do not handle any applicant funds. They help students understand eligibility, assemble documentation and complete applications to the responsible federal body.",
       },
       {
         type: "p",
-        text: "The Board has since constituted operational committees and commenced work on the Commission's Strategic Development Roadmap.",
+        text: "Student financing has been among the administration's interventions highlighted by the programme's leadership at state inaugurations.",
+      },
+    ],
+  },
+  {
+    slug: "young-farmers-clusters-benue",
+    title: "Young farmers' clusters take root in Benue local governments",
+    date: "2026-07-15",
+    type: "news",
+    tag: "Agriculture",
+    excerpt:
+      "Local government clusters are connecting young farmers to inputs, extension advice and buyers, with a focus on farming as an enterprise rather than a fallback.",
+    body: [
+      {
+        type: "p",
+        text: "Young farmers' clusters are being established at local government level in Benue, connecting young producers to inputs, extension advice and buyers.",
+      },
+      {
+        type: "p",
+        text: "The clusters are built around a simple proposition: farming treated as an enterprise, with the same access to advice, finance and markets that any other business would expect.",
+      },
+      {
+        type: "p",
+        text: "Agriculture and agripreneurship is one of the programme's eight pillars, and the model is planned for replication in other states as coordinating units are inaugurated.",
+      },
+    ],
+  },
+  {
+    slug: "fraud-warning-appointments",
+    title: "Notice: RHYE charges no fee for any appointment or registration",
+    date: "2026-09-04",
+    type: "announcement",
+    tag: "Notice",
+    excerpt:
+      "The National Secretariat warns against individuals demanding payment for RHYE positions, registration or programme access. Participation is free.",
+    body: [
+      {
+        type: "p",
+        text: "The National Secretariat has been made aware of individuals soliciting payment in the programme's name, in exchange for coordinating positions, registration or access to programme activities.",
+      },
+      {
+        type: "p",
+        text: "Participation in the Renewed Hope Youth Engagement is free. The programme charges no fee for membership, registration, appointment to any coordinating position at any level, or attendance at any programme activity.",
+      },
+      {
+        type: "p",
+        text: "Anyone demanding such a payment is acting fraudulently and without authority. Report it through the Report page on this website, or to your state coordinating unit.",
+      },
+      {
+        type: "p",
+        text: "Verify every notice, appointment and invitation against this website before acting on it.",
+      },
+    ],
+  },
+  {
+    slug: "eight-pillars-published",
+    title: "Programme publishes the eight pillars behind every RHYE activity",
+    date: "2026-08-01",
+    type: "announcement",
+    tag: "Structure",
+    excerpt:
+      "Every activity the programme runs now falls under one of eight published pillars, from civic engagement and peace to agriculture, enterprise and inclusion.",
+    body: [
+      {
+        type: "p",
+        text: "The programme has published the eight pillars under which every RHYE activity falls, giving coordinating units a common framework for planning and reporting.",
+      },
+      { type: "p", text: "The eight pillars are:" },
+      {
+        type: "ul",
+        items: [
+          "Civic Engagement & Governance",
+          "Peace & Non-Violence",
+          "Leadership & Capacity Building",
+          "Digital Skills & Innovation",
+          "Education & Student Support",
+          "Agriculture & Agripreneurship",
+          "Enterprise & Employment",
+          "Inclusion — Young Women & PWDs",
+        ],
+      },
+      {
+        type: "p",
+        text: "State coordinating units are asked to map their activity to these pillars so that reporting is comparable across the federation.",
       },
     ],
   },

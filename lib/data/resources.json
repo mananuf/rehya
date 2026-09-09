@@ -1,63 +1,73 @@
 [
   {
-    "title": "NCDC (Establishment) Act, 2024",
-    "category": "Act & Legal",
-    "description": "The North Central Development Commission (Establishment) Act, 2024 — the Commission's founding statute, establishing its mandate, governance and funding.",
-    "file": "/documents/ncdc-establishment-act-2024.pdf",
-    "date": "2024-07-24",
-    "external": false
+    "title": "RHYE Programme Charter",
+    "category": "Charter & Governance",
+    "description": "The operating charter of the Renewed Hope Youth Engagement — its mandate, structure from National Secretariat to ward level, and the conduct expected of every coordinator. Publication pending.",
+    "file": null,
+    "date": "2026-08-01",
+    "external": false,
+    "pending": true
   },
   {
-    "title": "Strategic Development Roadmap (Summary)",
+    "title": "National Structure & Coordination Framework",
+    "category": "Charter & Governance",
+    "description": "How the programme is organised across six geopolitical zones, 36 states and the FCT, 774 local government areas and 8,809 wards, and how state coordinating units are inaugurated. Publication pending.",
+    "file": null,
+    "date": "2026-08-01",
+    "external": false,
+    "pending": true
+  },
+  {
+    "title": "Code of Conduct — Peace & Non-Violence",
+    "category": "Policies",
+    "description": "The programme's standing charge against political violence, hate speech, intimidation and misinformation, and the conduct required of coordinators and volunteers. Publication pending.",
+    "file": null,
+    "date": "2026-08-01",
+    "external": false,
+    "pending": true
+  },
+  {
+    "title": "Eight Pillars — Programme Guide",
     "category": "Strategy & Planning",
-    "description": "Summary of the Commission's Strategic Development Roadmap, aligned with the National Regional Development Policy (NRDP) 2026–2030. Full document pending publication.",
-    "file": null,
-    "date": "2026-05-01",
+    "description": "The eight pillars that every RHYE activity falls under, with the programme lines delivered against each.",
+    "file": "/what-we-do",
+    "date": "2026-08-01",
     "external": false,
-    "pending": true
+    "isPage": true
   },
   {
-    "title": "2026 Budget Overview",
-    "category": "Budgets",
-    "description": "Overview of the Commission's ₦140 billion 2026 appropriation — approximately 86% capital expenditure — as approved by the National Assembly. Detailed budget publication pending.",
-    "file": null,
-    "date": "2026-02-16",
-    "external": false,
-    "pending": true
-  },
-  {
-    "title": "Freedom of Information (FOI) Guide",
+    "title": "Information Request Guide",
     "category": "Policies",
-    "description": "How to make a Freedom of Information request to the Commission under the FOI Act 2011.",
+    "description": "How to request information about the programme's structure, activities and coordinators.",
     "file": "/foi",
-    "date": "2026-01-15",
+    "date": "2026-08-01",
     "external": false,
     "isPage": true
   },
   {
-    "title": "Procurement Policy Statement",
+    "title": "Partners & Suppliers Guide",
     "category": "Policies",
-    "description": "The Commission's commitment to open, competitive procurement in line with the Public Procurement Act 2007. Tenders are published on the Procurement page.",
+    "description": "How organisations partner with the programme or supply services to its events, and the standards expected.",
     "file": "/procurement",
-    "date": "2026-01-15",
+    "date": "2026-08-01",
     "external": false,
     "isPage": true
   },
   {
-    "title": "Maiden Stakeholders Summit — Communiqué",
+    "title": "State Inauguration Reports",
     "category": "Reports",
-    "description": "Communiqué of the maiden North Central Regional Stakeholders Development Summit, Lafia. Publication pending.",
+    "description": "Reports from the inauguration of state coordinating units, beginning with Plateau (August 2026) and Benue. Publication pending.",
     "file": null,
-    "date": "2026-06-10",
+    "date": "2026-08-05",
     "external": false,
     "pending": true
   },
   {
     "title": "Official Logo & Brand Assets",
     "category": "Brand",
-    "description": "Official NCDC logo files and brand guidelines for media and partners. Publication pending.",
+    "description": "Official RHYE logo files and usage guidelines for media, partners and state coordinating units. Publication pending.",
     "file": null,
-    "date": "2026-01-15",
+    "date": "2026-08-01",
     "external": false,
     "pending": true
   }

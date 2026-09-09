@@ -5,19 +5,19 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { FOCUS_AREAS, PROJECTS } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "What We Do",
+  title: "Our Pillars",
   description:
-    "The Commission's eight focus areas — infrastructure, agriculture, peace & rehabilitation, health, education, solid minerals, ecology, and youth & innovation.",
+    "The programme's eight pillars — civic engagement, peace, leadership, digital skills, education, agriculture, enterprise and inclusion.",
 };
 
 export default function WhatWeDoPage() {
   return (
     <PageShell>
       <PageHeader
-        eyebrow="What We Do"
-        title="Eight focus areas."
+        eyebrow="Our Pillars"
+        title="Eight pillars."
         titleMuted="One mission."
-        lead="Every intervention the Commission makes falls under one of eight focus areas drawn from our mandate and the Strategic Development Roadmap."
+        lead="Every activity the programme runs falls under one of eight pillars, so that work is comparable across all 37 coordinating units."
       />
 
       <PageSection>

@@ -5,47 +5,48 @@ import { StaticForm } from "@/components/site/static-form";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Careers at the North Central Development Commission — current vacancies and the regional talent register.",
+    "Careers and volunteering with the Renewed Hope Youth Engagement — open roles and the national volunteer register.",
 };
 
 export default function CareersPage() {
   return (
     <PageShell>
       <PageHeader
-        eyebrow="Careers"
-        title="Build the region."
-        titleMuted="Build your career."
-        lead="The Commission recruits openly and on merit. Vacancies are published here first — and only here. We never charge application fees, and we never recruit through agents."
+        eyebrow="Careers &amp; Volunteering"
+        title="Organise your ward."
+        titleMuted="Or your state."
+        lead="Roles and volunteer positions are published here first — and only here. The programme never charges an application fee, never charges for a coordinating position, and never recruits through agents."
       />
       <PageSection>
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
           <div className="lg:col-span-7">
             <div className="border border-dashed border-border bg-white p-10 lg:p-16 text-center">
               <span className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground">
-                Current vacancies
+                Current openings
               </span>
               <h2 className="mt-3 text-3xl font-display text-foreground">
-                No open positions right now
+No open positions right now
               </h2>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-md mx-auto">
-                As a young commission we recruit in phases. Join the talent
-                register and you&apos;ll be notified the moment a matching role
-                opens.
+                Coordinating positions open as state units are inaugurated.
+                Join the volunteer register and you&apos;ll be notified when a
+                role opens in your state.
               </p>
               <p className="mt-8 text-xs text-primary bg-secondary p-4 leading-relaxed max-w-md mx-auto">
-                <strong>Beware of fraud:</strong> NCDC does not charge for
-                applications and has not authorised any third party to recruit
-                on its behalf. Report suspicious offers via our contact page.
+                <strong>Beware of fraud:</strong> RHYE charges nothing for any
+                application, appointment or coordinating position, and has
+                authorised no third party to recruit on its behalf. Report anyone
+                demanding payment via the Report page.
               </p>
             </div>
           </div>
           <div className="lg:col-span-5">
             <div className="border border-border bg-secondary/50 p-6 lg:p-10">
               <h2 className="text-2xl font-display text-foreground mb-1">
-                Talent register
+Volunteer register
               </h2>
               <p className="text-sm text-muted-foreground mb-8">
-                Tell us who you are and what you do.
+                Tell us who you are and where you are.
               </p>
               <StaticForm
                 fields={[
@@ -53,25 +54,26 @@ export default function CareersPage() {
                   { name: "email", label: "Email", type: "email", required: true },
                   {
                     name: "field",
-                    label: "Professional field",
+                    label: "Where you can help",
                     type: "select",
                     required: true,
-                    placeholder: "Select your field…",
+                    placeholder: "Select an area…",
                     options: [
-                      "Engineering & Infrastructure",
-                      "Agriculture & Environment",
-                      "Monitoring & Evaluation",
-                      "Finance & Audit",
-                      "ICT & Data",
-                      "Health & Education",
-                      "Administration & Legal",
-                      "Communications",
+                      "Ward mobilisation",
+                      "Civic education & voter awareness",
+                      "Peace advocacy & fact-checking",
+                      "Digital skills training",
+                      "Agriculture & agripreneurship",
+                      "Enterprise & employment linkage",
+                      "Young women's participation",
+                      "Accessibility & inclusion",
+                      "Communications & media",
                     ],
                   },
                 ]}
                 submitLabel="Join the register"
                 successTitle="You're on the register."
-                successBody="We'll notify you when a role matching your field is advertised."
+                successBody="We'll notify you when a role opens in your state. We will never ask you for a fee."
                 footnote="Prototype notice: this demonstration form does not transmit data."
               />
             </div>

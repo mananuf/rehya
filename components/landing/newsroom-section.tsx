@@ -50,7 +50,7 @@ export function NewsroomSection() {
           >
             <span className="block">The latest</span>
             <span className="block text-muted-foreground">
-              from the Commission.
+              from the programme.
             </span>
           </h2>
         </div>

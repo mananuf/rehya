@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "About",         href: "/about"       },
-  { name: "What We Do",    href: "/what-we-do"  },
-  { name: "Projects",      href: "/projects"    },
-  { name: "States",        href: "/states"      },
-  { name: "Newsroom",      href: "/newsroom"    },
-  { name: "Resources",     href: "/resources"   },
+  { name: "About",       href: "/about"      },
+  { name: "Our Pillars", href: "/what-we-do" },
+  { name: "Programmes",  href: "/projects"   },
+  { name: "States",      href: "/states"     },
+  { name: "Newsroom",    href: "/newsroom"   },
+  { name: "Resources",   href: "/resources"  },
 ];
 
 export function Navigation({ solid = false }: { solid?: boolean }) {
@@ -49,13 +49,13 @@ export function Navigation({ solid = false }: { solid?: boolean }) {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <img 
-              src="/ncdc-seal.png" 
-              alt="NCDC" 
-              className={`transition-all duration-500 ${isScrolled ? "h-7" : "h-10"}`}
+              src="/rhye-mark.png" 
+              alt="RHYE" 
+              className={`transition-all duration-500 ${isScrolled ? "h-6" : "h-8"}`}
             />
             <div className="hidden sm:flex flex-col">
-              <span className={`font-display font-bold tracking-tight transition-all duration-500 ${isScrolled ? "text-xs text-foreground" : "text-sm text-foreground"}`}>NCDC</span>
-              <span className={`font-mono text-[8px] leading-none transition-all duration-500 text-muted-foreground`}>Federal Commission</span>
+              <span className={`font-display font-bold tracking-tight transition-all duration-500 ${isScrolled ? "text-xs text-foreground" : "text-sm text-foreground"}`}>RHYE</span>
+              <span className={`font-mono text-[8px] leading-none transition-all duration-500 text-muted-foreground`}>Renewed Hope Youth Engagement</span>
             </div>
           </Link>
 
@@ -83,7 +83,7 @@ export function Navigation({ solid = false }: { solid?: boolean }) {
               asChild
               className={`rounded-full transition-all duration-500 bg-primary hover:bg-primary/90 text-white px-6 h-8 text-xs font-medium`}
             >
-              <Link href="/report">Report a Project</Link>
+              <Link href="/report">Report an Issue</Link>
             </Button>
           </div>
 
@@ -153,7 +153,7 @@ export function Navigation({ solid = false }: { solid?: boolean }) {
               className="flex-1 bg-primary text-white rounded-full h-14 text-base hover:bg-primary/90"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Link href="/report">Report a Project</Link>
+              <Link href="/report">Report an Issue</Link>
             </Button>
           </div>
         </div>

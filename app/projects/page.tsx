@@ -3,9 +3,9 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import { ProjectExplorer } from "@/components/site/project-explorer";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Programmes",
   description:
-    "Explore NCDC projects across the North Central region — filter by state, focus area and status.",
+    "Explore RHYE programme lines across all 36 states and the FCT — filter by state, pillar and status.",
 };
 
 export default async function ProjectsPage({
@@ -18,10 +18,10 @@ export default async function ProjectsPage({
   return (
     <PageShell>
       <PageHeader
-        eyebrow="Project Explorer"
-        title="Every project."
+        eyebrow="Programme Explorer"
+        title="Every programme."
         titleMuted="On the record."
-        lead="Filter the Commission's project book by state, focus area and status. As delivery scales, this page will carry live, field-verified progress for every intervention."
+        lead="Filter the programme book by state, pillar and status. As coordinating units are inaugurated, this page will carry verified progress for every programme line they run."
       />
       <PageSection>
         <ProjectExplorer initialSector={sector ?? ""} initialState={state ?? ""} />
@@ -30,8 +30,8 @@ export default async function ProjectsPage({
           <span className="font-mono uppercase border border-dashed border-border px-2 py-0.5 rounded-full">
             Sample
           </span>{" "}
-          are illustrative prototypes shown for demonstration while the
-          Commission&apos;s verified project data is onboarded.
+          are illustrative placeholders shown for demonstration while verified
+          programme data is onboarded from the state coordinating units.
         </p>
       </PageSection>
     </PageShell>

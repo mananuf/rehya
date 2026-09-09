@@ -29,7 +29,7 @@ type PinDatum = {
 
 /**
  * Brand globe: dark sphere + green hex-dot landmass on a transparent
- * background, pins for the 7 NCDC locations. The globe.gl instance is
+ * background, pins for the 37 RHYE coordinating units. The globe.gl instance is
  * created exactly once; selection changes only update pins + camera.
  */
 export default function GlobeComponent({
@@ -209,7 +209,7 @@ export default function GlobeComponent({
       ref={containerRef}
       className="w-full h-full overflow-hidden [&_canvas]:!outline-none [&_canvas]:max-w-full [&_canvas]:max-h-full"
       role="img"
-      aria-label="Rotating globe showing NCDC locations across the North Central region"
+      aria-label="Rotating globe showing RHYE coordinating units across Nigeria"
     />
   );
 }

@@ -2,38 +2,39 @@
 
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef } from "react";
+import { SITE } from "@/lib/content";
 
 const footerLinks = {
-  Commission: [
-    { name: "About NCDC", href: "/about" },
-    { name: "Board & Management", href: "/about/leadership" },
-    { name: "What We Do", href: "/what-we-do" },
-    { name: "Careers", href: "/careers" },
+  Programme: [
+    { name: "About RHYE", href: "/about" },
+    { name: "Leadership", href: "/about/leadership" },
+    { name: "Our Pillars", href: "/what-we-do" },
+    { name: "Careers & Volunteering", href: "/careers" },
   ],
-  Transparency: [
-    { name: "FOI Requests", href: "/foi" },
-    { name: "Procurement & Tenders", href: "/procurement" },
-    { name: "Report a Project", href: "/report" },
-    { name: "Establishment Act", href: "/about/act" },
+  Accountability: [
+    { name: "Information Requests", href: "/foi" },
+    { name: "Partners & Suppliers", href: "/procurement" },
+    { name: "Report an Issue", href: "/report" },
+    { name: "Programme Charter", href: "/about/charter" },
   ],
   "Our Work": [
-    { name: "Projects", href: "/projects" },
+    { name: "Programmes", href: "/projects" },
     { name: "Newsroom", href: "/newsroom" },
     { name: "Resources", href: "/resources" },
     { name: "Contact Us", href: "/contact" },
   ],
   States: [
+    { name: "Plateau", href: "/states/plateau" },
     { name: "Benue", href: "/states/benue" },
-    { name: "Kogi", href: "/states/kogi" },
-    { name: "Kwara", href: "/states/kwara" },
-    { name: "Nasarawa · Plateau · Niger · FCT", href: "/states" },
+    { name: "FCT", href: "/states/fct" },
+    { name: "All 36 states + FCT", href: "/states" },
   ],
 };
 
 const socialLinks = [
-  { name: "Twitter", href: "#" },
-  { name: "Facebook", href: "#" },
-  { name: "LinkedIn", href: "#" },
+  { name: "X", href: SITE.socials.x },
+  { name: "Facebook", href: SITE.socials.facebook },
+  { name: "Instagram", href: SITE.socials.instagram },
 ];
 
 function AnimatedWaveCanvas() {
@@ -98,8 +99,8 @@ export function FooterSection() {
       {/* Panoramic banner image */}
       <div className="relative w-full h-[340px] md:h-[420px] overflow-hidden">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Iss072e095268_%28Oct_20%2C_2024%29_---_The_Niger_River_splits_into_its_tributary%2C_the_Benue_River%2C_at_the_Nigerian_city_of_Lokoja_with_a_population_of_over_692%2C00_in_this_photograph_from_the_International_Space_Station_as_i.jpg/1920px-thumbnail.jpg"
-          alt="Niger-Benue confluence from ISS"
+          src="/images/market.jpg"
+          alt="A busy Nigerian market"
           className="w-full h-full object-cover object-center"
         />
         {/* Gradient fade to dark at bottom */}
@@ -114,15 +115,15 @@ export function FooterSection() {
             {/* Brand Column */}
             <div className="col-span-2">
               <a href="#" className="inline-flex items-center gap-3 mb-6">
-                <img src="/ncdc-seal.png" alt="NCDC" className="h-12" />
+                <img src="/rhye-mark-light.png" alt="RHYE" className="h-9" />
                 <div className="flex flex-col">
-                  <span className="text-lg font-display text-white font-bold">NCDC</span>
-                  <span className="text-xs text-white/60 font-mono leading-none">Federal Commission</span>
+                  <span className="text-lg font-display text-white font-bold">RHYE</span>
+                  <span className="text-xs text-white/60 font-mono leading-none">Renewed Hope Youth Engagement</span>
                 </div>
               </a>
 
               <p className="text-white/70 leading-relaxed mb-8 max-w-xs text-sm">
-                Driving reconstruction, rehabilitation and sustainable development across the North Central region.
+                Mobilising young Nigerians into governance across 36 states, the Federal Capital Territory and 774 local government areas.
               </p>
 
               {/* Social Links */}
@@ -166,14 +167,14 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4 text-xs text-white/50">
-            <span>&copy; 2026 NCDC — an agency of the Federal Republic of Nigeria</span>
+            <span>&copy; 2026 Renewed Hope Youth Engagement</span>
             <span className="text-white/30">·</span>
             <a href="/credits" className="hover:text-white transition-colors">Image credits — Wikimedia Commons</a>
           </div>
 
           <div className="flex items-center gap-2 text-sm text-white/60">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span>Commission operational · Lafia HQ</span>
+            <span>National Secretariat · Abuja</span>
           </div>
         </div>
       </div>

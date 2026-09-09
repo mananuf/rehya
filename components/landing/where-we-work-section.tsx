@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { STATES } from "@/lib/content";
 
 const GlobeComponent = dynamic(
   () => import("@/components/landing/globe-component"),
@@ -19,86 +20,15 @@ interface StateData {
   isHQ?: boolean;
 }
 
-const statesData: StateData[] = [
-  {
-    id: "benue",
-    name: "Benue",
-    coords: [7.34, 8.77],
-    epithet: "Food Basket of the Nation",
-    activities: [
-      "Resettlement of displaced farming communities",
-      "Agro-industrial clusters development",
-      "Agricultural value chains strengthening",
-    ],
-  },
-  {
-    id: "kogi",
-    name: "Kogi",
-    coords: [7.8, 6.74],
-    epithet: "The Confluence State",
-    activities: [
-      "Flood resilience infrastructure",
-      "Community mining cooperatives",
-      "River management programs",
-    ],
-  },
-  {
-    id: "kwara",
-    name: "Kwara",
-    coords: [8.5, 4.55],
-    epithet: "State of Harmony",
-    activities: [
-      "Youth innovation hubs",
-      "Agribusiness incubation centers",
-      "Community development projects",
-    ],
-  },
-  {
-    id: "nasarawa",
-    name: "Nasarawa",
-    coords: [8.49, 8.52],
-    epithet: "Home of Solid Minerals",
-    activities: [
-      "National HQ coordination (Lafia)",
-      "Responsible mining partnerships",
-      "Mineral value chain development",
-    ],
-    isHQ: true,
-  },
-  {
-    id: "niger",
-    name: "Niger",
-    coords: [9.93, 6.55],
-    epithet: "The Power State",
-    activities: [
-      "Rehabilitation of conflict-affected communities",
-      "Dam-community irrigation projects",
-      "Economic recovery programs",
-    ],
-  },
-  {
-    id: "plateau",
-    name: "Plateau",
-    coords: [9.92, 8.9],
-    epithet: "Home of Peace and Tourism",
-    activities: [
-      "Post-conflict reconstruction",
-      "Highland agriculture value chains",
-      "Tourism infrastructure development",
-    ],
-  },
-  {
-    id: "fct",
-    name: "FCT",
-    coords: [9.06, 7.49],
-    epithet: "Centre of Unity",
-    activities: [
-      "Satellite-town coordination",
-      "Regional integration initiatives",
-      "Federal partnership programs",
-    ],
-  },
-];
+/** All 37 coordinating units — 36 states plus the FCT — from the shared dataset. */
+const statesData: StateData[] = STATES.map((s) => ({
+  id: s.slug,
+  name: s.name,
+  coords: [s.lat, s.lng],
+  epithet: s.epithet,
+  activities: s.activities,
+  ...(s.isHq ? { isHQ: true } : {}),
+}));
 
 export function WhereWeWorkSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -157,14 +87,14 @@ export function WhereWeWorkSection() {
           <h2 className={`text-6xl md:text-7xl lg:text-8xl font-display tracking-tight leading-[0.85] text-foreground transition-all duration-1000 delay-100 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
           }`}>
-            <span className="block">One region.</span>
-            <span className="block text-muted-foreground">Seven front lines of development.</span>
+            <span className="block">One country.</span>
+            <span className="block text-muted-foreground">37 coordinating units.</span>
           </h2>
 
           <p className={`mt-6 max-w-2xl text-lg text-muted-foreground transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
-            Rotate the globe — or let it turn — to explore the six states and the Federal Capital Territory where the Commission works.
+            Rotate the globe — or let it turn — to explore the 36 states and the Federal Capital Territory where the programme has a coordinating unit.
           </p>
         </div>
 
@@ -225,7 +155,9 @@ export function WhereWeWorkSection() {
               {/* Title */}
               <h3 className="text-3xl font-display text-foreground mb-6">
                 {selectedState.name}
-                {selectedState.isHQ && <span className="ml-2 text-primary">★ HQ</span>}
+                {selectedState.isHQ && (
+                  <span className="ml-2 text-primary">★ National Secretariat</span>
+                )}
               </h3>
 
               {/* Activities */}
@@ -253,10 +185,10 @@ export function WhereWeWorkSection() {
         {/* Stats Strip */}
         <div className="mt-16 lg:mt-20 pt-16 lg:pt-20 border-t border-border flex flex-wrap gap-8 lg:gap-16">
           {[
-            { value: "7 Locations", label: "Across Nigeria" },
-            { value: "121 LGAs", label: "Local Governments" },
-            { value: "20M+ People", label: "Direct Reach" },
-            { value: "₦140bn", label: "2026 Budget" },
+            { value: "37 Units", label: "States + FCT" },
+            { value: "774 LGAs", label: "Local Governments" },
+            { value: "8,809 Wards", label: "Registration Areas" },
+            { value: "6 Zones", label: "Geopolitical Zones" },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="text-2xl lg:text-3xl font-display text-foreground">{stat.value}</div>

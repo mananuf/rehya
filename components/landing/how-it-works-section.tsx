@@ -2,25 +2,25 @@
 
 import { useEffect, useRef, useState } from "react";
 import { 
-  Hammer, 
-  Wheat, 
+  Vote, 
   Handshake, 
-  Heart, 
-  BookOpen, 
-  Gem, 
-  Leaf, 
-  Lightbulb 
+  Users, 
+  Laptop, 
+  GraduationCap, 
+  Sprout, 
+  Briefcase, 
+  HeartHandshake 
 } from "lucide-react";
 
 const focusAreas = [
-  { number: "01", title: "Infrastructure", subtitle: "& Connectivity", icon: Hammer },
-  { number: "02", title: "Agriculture", subtitle: "& Food Security", icon: Wheat },
-  { number: "03", title: "Peace, Security", subtitle: "& Rehabilitation", icon: Handshake },
-  { number: "04", title: "Health", subtitle: "Systems", icon: Heart },
-  { number: "05", title: "Education", subtitle: "& Human Capital", icon: BookOpen },
-  { number: "06", title: "Solid Minerals", subtitle: "Development", icon: Gem },
-  { number: "07", title: "Ecology", subtitle: "& Erosion Control", icon: Leaf },
-  { number: "08", title: "Youth, Women", subtitle: "& Innovation", icon: Lightbulb },
+  { number: "01", title: "Civic Engagement", subtitle: "& Governance", icon: Vote },
+  { number: "02", title: "Peace", subtitle: "& Non-Violence", icon: Handshake },
+  { number: "03", title: "Leadership", subtitle: "& Capacity Building", icon: Users },
+  { number: "04", title: "Digital Skills", subtitle: "& Innovation", icon: Laptop },
+  { number: "05", title: "Education", subtitle: "& Student Support", icon: GraduationCap },
+  { number: "06", title: "Agriculture", subtitle: "& Agripreneurship", icon: Sprout },
+  { number: "07", title: "Enterprise", subtitle: "& Employment", icon: Briefcase },
+  { number: "08", title: "Inclusion", subtitle: "Young Women & PWDs", icon: HeartHandshake },
 ];
 
 export function HowItWorksSection() {
@@ -55,7 +55,7 @@ export function HowItWorksSection() {
           <div className={`transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-12 opacity-0"}`}>
             <span className="inline-flex items-center gap-3 text-sm font-mono text-primary mb-8">
               <span className="w-12 h-px bg-primary" />
-              Our Focus Areas
+              Our Pillars
             </span>
           </div>
           
@@ -63,12 +63,12 @@ export function HowItWorksSection() {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
           }`}>
             <span className="block">Eight pillars</span>
-            <span className="block text-muted-foreground">of development.</span>
+            <span className="block text-muted-foreground">of engagement.</span>
           </h2>
           <p className={`mt-6 max-w-2xl text-lg text-muted-foreground transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
-            We focus on comprehensive development across infrastructure, agriculture, security, health, education, minerals, ecology, and youth empowerment.
+Every activity the programme runs falls under one of eight pillars — from civic engagement and peace to skills, agriculture, enterprise and inclusion.
           </p>
         </div>
 

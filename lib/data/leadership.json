@@ -1,50 +1,119 @@
 [
   {
-    "slug": "cosmas-akighir",
-    "name": "Barr. Cosmas Tenenge Akighir",
-    "role": "Chairman, Governing Board",
+    "slug": "bola-ahmed-tinubu",
+    "name": "President Bola Ahmed Tinubu, GCFR",
+    "role": "President and Commander-in-Chief of the Armed Forces",
+    "represents": "Federal Republic of Nigeria",
+    "tier": "patron",
+    "verified": true,
+    "bio": "Bola Ahmed Tinubu was sworn in as President of the Federal Republic of Nigeria on 29 May 2023. The Renewed Hope Agenda is the governing framework of his administration, and the Renewed Hope Youth Engagement takes its name and its policy direction from that agenda."
+  },
+  {
+    "slug": "kashim-shettima",
+    "name": "Vice President Kashim Shettima, GCON",
+    "role": "Vice President of the Federal Republic of Nigeria",
+    "represents": "Federal Republic of Nigeria",
+    "tier": "patron",
+    "verified": true,
+    "bio": "Kashim Shettima has served as Vice President since 29 May 2023, and previously as Governor of Borno State and Senator for Borno Central. Youth development and human-capital programmes fall within the administration's Renewed Hope priorities."
+  },
+  {
+    "slug": "nentawe-yilwatda",
+    "name": "Prof. Nentawe Goshwe Yilwatda",
+    "role": "National Chairman, All Progressives Congress",
+    "represents": "All Progressives Congress",
+    "tier": "patron",
+    "verified": true,
+    "bio": "Prof. Nentawe Goshwe Yilwatda became National Chairman of the All Progressives Congress in 2025 and was returned to the office at the party's national convention in Abuja in March 2026. He previously served as Minister of Humanitarian Affairs and Poverty Reduction."
+  },
+  {
+    "slug": "ali-bukar-dalori",
+    "name": "Ali Bukar Dalori",
+    "role": "Deputy National Chairman (North), All Progressives Congress",
+    "represents": "All Progressives Congress",
+    "tier": "patron",
+    "verified": true,
+    "bio": "Ali Bukar Dalori serves as Deputy National Chairman (North) of the All Progressives Congress, a position to which he was returned at the party's March 2026 national convention."
+  },
+  {
+    "slug": "benjamin-obi-nwoye",
+    "name": "Dr. Benjamin Obi Nwoye",
+    "role": "Deputy National Chairman (South), All Progressives Congress",
+    "represents": "All Progressives Congress",
+    "tier": "patron",
+    "verified": true,
+    "bio": "Dr. Benjamin Obi Nwoye serves as Deputy National Chairman (South) of the All Progressives Congress, a position to which he was returned at the party's March 2026 national convention."
+  },
+  {
+    "slug": "surajudeen-ajibola-basiru",
+    "name": "Sen. Surajudeen Ajibola Basiru",
+    "role": "National Secretary, All Progressives Congress",
+    "represents": "All Progressives Congress",
+    "tier": "patron",
+    "verified": true,
+    "bio": "Sen. Surajudeen Ajibola Basiru serves as National Secretary of the All Progressives Congress, returned to the office at the party's March 2026 national convention. He previously represented Osun Central in the Senate."
+  },
+  {
+    "slug": "abdulkarim-abubakar-kana",
+    "name": "Prof. AbdulKarim Abubakar Kana",
+    "role": "Deputy National Secretary, All Progressives Congress",
+    "represents": "All Progressives Congress",
+    "tier": "patron",
+    "verified": true,
+    "bio": "Prof. AbdulKarim Abubakar Kana serves as Deputy National Secretary of the All Progressives Congress, returned to the office at the party's March 2026 national convention."
+  },
+  {
+    "slug": "abdulazeez-abubakar-kaka",
+    "name": "Abdulazeez Abubakar Kaka",
+    "role": "National Coordinator",
+    "represents": "National Secretariat",
+    "tier": "programme",
+    "verified": true,
+    "bio": "Abdulazeez Abubakar Kaka is the National Coordinator of the Renewed Hope Youth Engagement. He has led the inauguration of state coordinating structures across the federation, including Plateau State in August 2026 and Benue State, and has used those platforms to set out the administration's interventions in student financing, security welfare and state allocations. His name also appears in some published reports as Abdurazez Abubakar Kaka."
+  },
+  {
+    "slug": "fidelis-unongo",
+    "name": "Fidelis Unongo",
+    "role": "State Coordinator, Benue",
     "represents": "Benue State",
+    "tier": "programme",
     "verified": true,
-    "bio": "Barrister Cosmas Tenenge Akighir is the pioneer Chairman of the Governing Board of the North Central Development Commission. A lawyer and administrator from Benue State, he was nominated by President Bola Ahmed Tinubu and confirmed by the Senate in June 2025. He leads the 19-member Governing Board inaugurated on 28 August 2025 by the Honourable Minister of Regional Development, Engr. Abubakar Momoh, with a mandate to steer the Commission's strategy for the reconstruction and sustainable development of the North Central region."
+    "bio": "Fidelis Unongo is the Benue State Coordinator of the Renewed Hope Youth Engagement. The Benue State Executive Committee was inaugurated by Governor Hyacinth Iormem Alia, represented by Deputy Governor Dr. Sam Ode, with a charge to build an inclusive, results-driven structure reaching communities, markets and religious institutions across the state."
   },
   {
-    "slug": "cyril-tsenyil",
-    "name": "Dr. Cyril Yiltsen Tsenyil",
-    "role": "Managing Director / Chief Executive Officer",
-    "represents": "Plateau State",
-    "verified": true,
-    "bio": "Dr. Cyril Yiltsen Tsenyil is the pioneer Managing Director and Chief Executive Officer of the North Central Development Commission. A distinguished chartered accountant and former Accountant-General of Plateau State, he was confirmed by the Senate in June 2025. He leads the Commission's management, championing a strategy anchored on verified delivery, prudent financial management and a development roadmap aligned with the National Regional Development Policy."
-  },
-  {
-    "slug": "atika-ajanah",
-    "name": "Princess Atika Ajanah",
-    "role": "Executive Director, Projects",
-    "represents": "Kogi State",
-    "verified": true,
-    "bio": "Princess Atika Ajanah serves as Executive Director, Projects of the North Central Development Commission, representing Kogi State. She oversees the planning, execution and monitoring of the Commission's capital projects and intervention programmes across the six states and the FCT."
-  },
-  {
-    "slug": "ed-finance-admin",
-    "name": "Executive Director, Finance & Administration",
-    "role": "Executive Director, Finance & Administration",
-    "represents": "North Central Zone",
+    "slug": "deputy-national-coordinator",
+    "name": "Deputy National Coordinator",
+    "role": "Deputy National Coordinator",
+    "represents": "National Secretariat",
+    "tier": "programme",
     "verified": false,
-    "bio": "Profile to be published. The Executive Director, Finance & Administration oversees the Commission's financial management, budgeting and corporate administration."
+    "bio": "Profile to be published. The Deputy National Coordinator supports the National Coordinator on programme delivery and the coordination of zonal structures."
   },
   {
-    "slug": "ed-corporate-services",
-    "name": "Executive Director, Corporate Services",
-    "role": "Executive Director, Corporate Services",
-    "represents": "North Central Zone",
+    "slug": "national-woman-leader",
+    "name": "National Woman Leader",
+    "role": "National Woman Leader",
+    "represents": "National Secretariat",
+    "tier": "programme",
     "verified": false,
-    "bio": "Profile to be published. The Executive Director, Corporate Services oversees human resources, procurement and corporate support services of the Commission."
+    "bio": "Profile to be published. The National Woman Leader drives the participation of young women across the programme's state and local government structures."
   },
   {
-    "slug": "board-members",
-    "name": "Members of the Governing Board",
-    "role": "Non-Executive Members",
-    "represents": "States of the Federation",
+    "slug": "zonal-coordinators",
+    "name": "Zonal Coordinators",
+    "role": "Six Geopolitical Zones",
+    "represents": "Zonal Structures",
+    "tier": "programme",
     "verified": false,
-    "bio": "In line with the NCDC (Establishment) Act 2024, the Governing Board includes members representing the states of the North Central zone and other geopolitical zones of the federation. The 19-member Board was inaugurated on 28 August 2025. Full member profiles will be published here."
+    "bio": "Profiles to be published. Zonal Coordinators link the National Secretariat to the state coordinating units across the six geopolitical zones — North Central, North East, North West, South East, South South and South West."
+  },
+  {
+    "slug": "state-coordinators",
+    "name": "State Coordinating Units",
+    "role": "36 States and the FCT",
+    "represents": "State Structures",
+    "tier": "programme",
+    "verified": false,
+    "bio": "Profiles to be published. Each state coordinating unit is inaugurated in the state capital and is responsible for local government and ward-level mobilisation within that state."
   }
 ]

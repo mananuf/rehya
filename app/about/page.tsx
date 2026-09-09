@@ -7,29 +7,29 @@ import { SITE } from "@/lib/content";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Who we are: the North Central Development Commission's mandate, mission, vision and establishment under the NCDC Act, 2024.",
+    "Who we are: the mandate, mission and national structure of the Renewed Hope Youth Engagement, a youth mobilisation platform under the Renewed Hope Agenda.",
 };
 
 const VALUES = [
   {
     number: "01",
-    title: "Verified Delivery",
-    body: "Every project we report is one we can show — on the ground, with evidence.",
+    title: "Participation",
+    body: "Young Nigerians as contributors to development, not an audience for it.",
   },
   {
     number: "02",
-    title: "Community First",
-    body: "Interventions begin with the communities they serve, from planning to handover.",
+    title: "Non-Violence",
+    body: "No hate speech, no intimidation, no misinformation — in any state, at any point in the cycle.",
   },
   {
     number: "03",
-    title: "Prudence",
-    body: "Public funds managed with discipline, audited openly, accounted for fully.",
+    title: "Free to Join",
+    body: "No fee for membership, registration or any position. Anyone who asks for money is a fraud.",
   },
   {
     number: "04",
-    title: "Partnership",
-    body: "We complement states, LGAs, federal ministries and development partners — never duplicate them.",
+    title: "Complement, Not Duplicate",
+    body: "We signpost young people to the federal and state schemes that already exist — we don't replace them.",
   },
 ];
 
@@ -37,49 +37,49 @@ export default function AboutPage() {
   return (
     <PageShell>
       <PageHeader
-        eyebrow="About the Commission"
-        title="Born of an Act."
-        titleMuted="Built for a region."
-        lead="The North Central Development Commission is a Federal Government agency established by the North Central Development Commission (Establishment) Act, 2024."
+        eyebrow="About the Programme"
+        title="A generation organised."
+        titleMuted="Ward by ward."
+        lead="The Renewed Hope Youth Engagement is a national youth mobilisation and civic-engagement platform operating under the Renewed Hope Agenda."
       />
 
       <PageSection>
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-7 space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Nigeria&apos;s North Central zone — Benue, Kogi, Kwara, Nasarawa,
-              Niger and Plateau States, together with the Federal Capital
-              Territory — is the country&apos;s food basket, its mineral belt
-              and its geographic heart. It is also a region carrying deep
-              scars: communities displaced by banditry and farmer-herder
-              conflict, infrastructure worn down by neglect, and ecological
-              pressures along the Niger–Benue river system.
+              Nigeria is a young country. The majority of its people are under
+              thirty, and yet the distance between that majority and the rooms
+              where decisions are made has stayed stubbornly wide. Young people
+              are consulted late, mobilised at election time, and told to wait
+              in between.
             </p>
             <p>
-              The Commission exists to change that trajectory. Our founding Act
-              charges us to coordinate the resettlement, rehabilitation,
-              reintegration and reconstruction of communities affected by
-              insecurity; to tackle poverty, illiteracy and ecological
-              challenges; and to harness the region&apos;s vast agricultural
-              and mineral resources for inclusive growth.
+              The Renewed Hope Youth Engagement exists to close that distance.
+              Its purpose is to organise young Nigerians into governance and the
+              political process — at ward, local government, state and national
+              level — so that they arrive as participants rather than as an
+              audience. Alongside that runs a standing charge on conduct: take
+              part actively, and reject political violence, hate speech,
+              intimidation and misinformation without qualification.
             </p>
             <p>
-              We are headquartered in {SITE.hq.city}, {SITE.hq.state}, and work
-              through liaison offices across the member states and the FCT — in
-              partnership with state governments, traditional institutions,
-              federal ministries and development partners.
+              The programme runs from a National Secretariat in{" "}
+              {SITE.hq.city} through coordinators in each of the six
+              geopolitical zones, state coordinating units inaugurated in all 36
+              state capitals and the Federal Capital Territory, and mobilisers
+              at local government and ward level — 774 LGAs and 8,809 wards.
             </p>
 
             <figure className="border-l-2 border-primary pl-6 py-2 mt-10">
               <blockquote className="text-2xl lg:text-3xl font-display text-foreground leading-snug">
-                “{SITE.presidentQuote.text}”
+                &ldquo;{SITE.mandateQuote.text}&rdquo;
               </blockquote>
               <figcaption className="mt-4 text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">
-                  {SITE.presidentQuote.author}
+                  {SITE.mandateQuote.author}
                 </span>
                 <br />
-                {SITE.presidentQuote.note}
+                {SITE.mandateQuote.note}
               </figcaption>
             </figure>
           </div>
@@ -91,9 +91,9 @@ export default function AboutPage() {
                 Our Mission
               </span>
               <p className="text-muted-foreground leading-relaxed">
-                To deliver verified, community-centred development across the
-                North Central region — rebuilding what was lost, and building
-                what comes next.
+                To organise, train and equip young Nigerians to take part in
+                governance in their own communities — and to hold themselves to
+                a standard of conduct worth following.
               </p>
             </div>
             <div className="border border-border bg-white p-8">
@@ -102,24 +102,36 @@ export default function AboutPage() {
                 Our Vision
               </span>
               <p className="text-muted-foreground leading-relaxed">
-                A peaceful, prosperous North Central — the food basket, the
-                mineral belt and the connective heart of Nigeria.
+                A Nigeria where the country&apos;s young majority is also its
+                governing majority — present in every ward, in every decision
+                that concerns them.
+              </p>
+            </div>
+            <div className="border border-border bg-white p-8">
+              <span className="inline-flex items-center gap-3 text-sm font-mono text-primary mb-4">
+                <span className="w-8 h-px bg-primary" />
+                What We Are Not
+              </span>
+              <p className="text-muted-foreground leading-relaxed">
+                Not a government agency, not a statutory body, and not a
+                replacement for the Federal Ministry of Youth Development. We
+                have no regulatory powers and disburse no public funds.
               </p>
             </div>
             <div className="bg-foreground text-white p-8">
               <span className="inline-flex items-center gap-3 text-sm font-mono text-[#2FA45B] mb-4">
                 <span className="w-8 h-px bg-[#2FA45B]" />
-                The Act
+                The Charter
               </span>
               <p className="text-white/70 leading-relaxed text-sm mb-6">
-                Read the Commission&apos;s founding statute — the NCDC
-                (Establishment) Act, 2024.
+                The programme&apos;s operating charter — mandate, structure and
+                the conduct required of every coordinator.
               </p>
               <Link
-                href="/about/act"
+                href="/about/charter"
                 className="inline-flex items-center gap-2 text-[#2FA45B] font-medium hover:gap-3 transition-all duration-300"
               >
-                View &amp; download
+                Read the charter
                 <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -158,13 +170,13 @@ export default function AboutPage() {
             href="/about/leadership"
             className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-8 py-3 text-sm font-medium hover:bg-primary/90 transition-colors"
           >
-            Board &amp; Management
+            Leadership
           </Link>
           <Link
             href="/what-we-do"
             className="inline-flex items-center gap-2 rounded-full border border-border bg-white text-foreground px-8 py-3 text-sm font-medium hover:border-primary hover:text-primary transition-colors"
           >
-            What We Do
+            Our Pillars
           </Link>
         </div>
       </PageSection>

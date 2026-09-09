@@ -8,7 +8,7 @@ import { NEWS } from "@/lib/news-data";
 export const metadata: Metadata = {
   title: "Newsroom",
   description:
-    "News and official announcements from the North Central Development Commission.",
+    "News and official announcements from the Renewed Hope Youth Engagement.",
 };
 
 function ArticleList({ items }: { items: typeof NEWS }) {
@@ -55,7 +55,7 @@ export default function NewsroomPage() {
         eyebrow="Newsroom"
         title="News &"
         titleMuted="announcements."
-        lead="Editorial coverage of the Commission's work, and official notices — kept separate, so you always know which is which."
+        lead="Editorial coverage of the programme's work, and official notices from the National Secretariat — kept separate, so you always know which is which."
       />
       <PageSection>
         <span className="inline-flex items-center gap-3 text-sm font-mono text-primary mb-8">

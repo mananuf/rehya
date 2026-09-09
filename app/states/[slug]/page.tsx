@@ -6,7 +6,7 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 import {
   PROJECTS,
   STATES,
-  STATE_IMAGES,
+  stateImage,
   STATUS_LABELS,
   getState,
 } from "@/lib/content";
@@ -52,7 +52,7 @@ export default async function StatePage({
         <div className="relative aspect-[21/9] overflow-hidden border border-border">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={STATE_IMAGES[state.slug]}
+            src={stateImage(state.slug)}
             alt={`${state.name} state`}
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -62,7 +62,7 @@ export default async function StatePage({
           {[
             { value: state.capital, label: "Capital" },
             { value: String(state.lgas), label: "LGAs" },
-            { value: String(projects.length), label: "Projects" },
+            { value: String(projects.length), label: "Programmes" },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="text-2xl lg:text-3xl font-display text-foreground">
@@ -79,10 +79,10 @@ export default async function StatePage({
       <PageSection muted>
         <span className="inline-flex items-center gap-3 text-sm font-mono text-primary mb-8">
           <span className="w-12 h-px bg-primary" />
-          Our Work Here
+Our Work Here
         </span>
         <h2 className="text-4xl md:text-6xl font-display tracking-tight leading-[0.9] text-foreground mb-12">
-          What the Commission is doing.
+What the programme is doing here.
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
           {state.activities.map((a, i) => (
@@ -103,10 +103,10 @@ export default async function StatePage({
         <PageSection>
           <span className="inline-flex items-center gap-3 text-sm font-mono text-primary mb-8">
             <span className="w-12 h-px bg-primary" />
-            Projects
+            Programmes
           </span>
           <h2 className="text-4xl md:text-6xl font-display tracking-tight leading-[0.9] text-foreground mb-12">
-            Projects in {state.slug === "fct" ? "the FCT" : state.name}.
+            Programmes in {state.slug === "fct" ? "the FCT" : state.name}.
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
             {projects.map((p) => (
@@ -125,7 +125,7 @@ export default async function StatePage({
                   {p.summary}
                 </p>
                 <span className="mt-auto pt-4 text-xs font-mono text-muted-foreground">
-                  {p.budget} · {p.progress}%
+                  {p.reach} · {p.progress}%
                 </span>
               </Link>
             ))}
@@ -141,14 +141,14 @@ export default async function StatePage({
           </span>
           <p className="text-xl font-display text-foreground">{state.office}</p>
           <p className="mt-2 text-sm text-muted-foreground">
-            General enquiries are routed through the Commission&apos;s
-            headquarters in Lafia.
+            General enquiries are routed through the National Secretariat in
+            Abuja.
           </p>
           <Link
             href="/contact"
             className="mt-5 inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300 text-sm"
           >
-            Contact the Commission
+Contact the programme
             <ChevronRight className="w-4 h-4" />
           </Link>
         </div>

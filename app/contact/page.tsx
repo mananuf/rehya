@@ -6,7 +6,7 @@ import { SITE, STATES } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact the North Central Development Commission — headquarters in Lafia, Nasarawa State, and liaison offices across the region.",
+    "Contact the Renewed Hope Youth Engagement — National Secretariat in Abuja, and coordinating units in all 36 states and the FCT.",
 };
 
 export default function ContactPage() {
@@ -15,8 +15,8 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Talk to"
-        titleMuted="the Commission."
-        lead="Enquiries, partnerships, media requests — we respond to every message."
+        titleMuted="the programme."
+        lead="Enquiries, partnerships, media requests, or a route to the coordinating unit in your state — we respond to every message."
       />
       <PageSection>
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
@@ -24,7 +24,7 @@ export default function ContactPage() {
             <div className="bg-foreground text-white p-8">
               <span className="inline-flex items-center gap-3 text-sm font-mono text-[#2FA45B] mb-4">
                 <span className="w-8 h-px bg-[#2FA45B]" />
-                Headquarters
+National Secretariat
               </span>
               <p className="text-xl font-display">{SITE.hq.address}</p>
               <p className="mt-4 text-sm text-white/70">
@@ -40,7 +40,7 @@ export default function ContactPage() {
               </span>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 For press enquiries and interview requests, write to the
-                Corporate Communications unit via {SITE.email} with
+                communications desk via {SITE.email} with
                 &ldquo;MEDIA&rdquo; in the subject line.
               </p>
             </div>
@@ -59,10 +59,11 @@ export default function ContactPage() {
                     placeholder: "What is this about?",
                     options: [
                       "General enquiry",
-                      "Partnership / development partner",
+                      "Joining the programme",
+                      "Partnership / sponsor",
                       "Media request",
-                      "Procurement / vendor",
-                      "Community engagement",
+                      "Supplier / vendor",
+                      "Reach my state coordinating unit",
                       "Other",
                     ],
                   },
@@ -70,7 +71,7 @@ export default function ContactPage() {
                 ]}
                 submitLabel="Send message"
                 successTitle="Message sent. Thank you."
-                successBody="Your enquiry has been received. The relevant directorate will respond as soon as possible."
+                successBody="Your enquiry has been received. The National Secretariat will respond, or route you to the coordinating unit for your state."
                 footnote="Prototype notice: this demonstration form does not transmit data."
               />
             </div>
@@ -81,10 +82,10 @@ export default function ContactPage() {
       <PageSection muted>
         <span className="inline-flex items-center gap-3 text-sm font-mono text-primary mb-8">
           <span className="w-12 h-px bg-primary" />
-          Offices
+Coordinating Units
         </span>
         <h2 className="text-4xl md:text-6xl font-display tracking-tight leading-[0.9] text-foreground mb-12">
-          Across the region.
+Across the federation.
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
           {STATES.map((s) => (

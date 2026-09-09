@@ -1,90 +1,90 @@
 [
   {
-    "slug": "infrastructure",
-    "name": "Infrastructure & Connectivity",
-    "short": "Roads, bridges and regional links that connect farms to markets and states to each other.",
-    "description": "The Commission plans and delivers critical infrastructure across the region — rural feeder roads, bridges, and regional trade corridors — prioritising the routes that unlock agricultural markets and reconnect communities cut off by insecurity or flooding.",
+    "slug": "civic-engagement",
+    "name": "Civic Engagement & Governance",
+    "short": "Turning young Nigerians from spectators of governance into participants in it.",
+    "description": "The programme's founding purpose: mobilising young people to take part in governance and the political process at ward, local government and state level. Coordinating units run civic-education sessions, voter-awareness drives and town halls that connect young people to the officials who represent them.",
     "programmes": [
-      "Rural feeder-roads programme (farm-to-market corridors)",
-      "Regional trade-corridor studies and rehabilitation",
-      "Bridges and river-crossing reconstruction"
+      "Ward-level civic education and voter awareness",
+      "Youth town halls with elected representatives",
+      "Governance literacy briefings on federal and state programmes"
+    ]
+  },
+  {
+    "slug": "peace-non-violence",
+    "name": "Peace & Non-Violence",
+    "short": "Participation without violence, hate speech, intimidation or misinformation.",
+    "description": "A standing charge of the programme, repeated at every state inauguration: young people are urged to participate actively in politics while rejecting violence, hate speech, intimidation and the spread of false information. Coordinating units run peace messaging, fact-checking drives and conflict de-escalation training ahead of and between electoral cycles.",
+    "programmes": [
+      "Anti-hate-speech and anti-misinformation campaigns",
+      "Peace advocacy with religious and traditional institutions",
+      "Conflict de-escalation training for ward mobilisers"
+    ]
+  },
+  {
+    "slug": "leadership-development",
+    "name": "Leadership & Capacity Building",
+    "short": "Training the coordinators who carry the programme into 774 local governments.",
+    "description": "Leadership and organisational training for the coordinators, ward mobilisers and volunteers who make up the programme's structure — covering public speaking, community organising, programme management and accountability in the handling of public trust.",
+    "programmes": [
+      "National and zonal coordinator induction",
+      "Community organising and mobilisation training",
+      "Mentorship pairings with public officials and professionals"
+    ]
+  },
+  {
+    "slug": "digital-skills",
+    "name": "Digital Skills & Innovation",
+    "short": "Digital capability as the fastest route from training to income.",
+    "description": "Signposting and delivering digital skills training for young Nigerians, and connecting them to existing federal skills and financing programmes. Coordinating units host training clusters and help young people navigate national schemes rather than duplicating them.",
+    "programmes": [
+      "Digital skills training clusters at state level",
+      "Signposting to federal skills and technology programmes",
+      "Innovation and content-creation showcases"
+    ]
+  },
+  {
+    "slug": "education-financing",
+    "name": "Education & Student Support",
+    "short": "Making sure no young Nigerian misses school for want of information.",
+    "description": "Awareness and application support for education financing — including the student loan scheme highlighted by the National Coordinator at state inaugurations — plus campus outreach and support for young people returning to education.",
+    "programmes": [
+      "Student loan scheme awareness and application clinics",
+      "Campus chapter outreach",
+      "Scholarship and bursary signposting"
     ]
   },
   {
     "slug": "agriculture",
-    "name": "Agriculture & Food Security",
-    "short": "Making the region's farming potential the engine of national food security.",
-    "description": "The North Central zone is Nigeria's food basket. The Commission supports agro-industrial clusters, incubation centres, irrigation and value-chain infrastructure so the region's produce feeds the nation and creates jobs at home.",
+    "name": "Agriculture & Agripreneurship",
+    "short": "Young people in farming as a business, not a fallback.",
+    "description": "Encouraging young Nigerians into agriculture as an enterprise — linking them to land, inputs, extension advice and markets through state coordinating units, and profiling young farmers who have built viable businesses.",
     "programmes": [
-      "Agribusiness incubation centres",
-      "Agro-industrial cluster development",
-      "Irrigation and dry-season farming support"
+      "Young farmers' clusters at local government level",
+      "Input, land and market linkage support",
+      "Agribusiness enterprise profiling"
     ]
   },
   {
-    "slug": "peace-security",
-    "name": "Peace, Security & Rehabilitation",
-    "short": "Resettling displaced communities and rebuilding what conflict destroyed.",
-    "description": "A core statutory mandate: the resettlement, rehabilitation, reintegration and reconstruction of roads, houses and business premises for communities affected by banditry, farmer-herder conflict and other insecurity — working with traditional rulers, community leaders and security agencies on peacebuilding and conflict prevention.",
+    "slug": "enterprise",
+    "name": "Enterprise & Employment",
+    "short": "Connecting trained young people to capital, customers and work.",
+    "description": "Enterprise support and employment linkage — connecting young people to credit schemes, business registration, and employment initiatives run by federal and state agencies, and convening employers at state level.",
     "programmes": [
-      "Resettlement & reconstruction of conflict-affected communities",
-      "Peacebuilding partnerships (traditional institutions, SPRiNG programme)",
-      "Logistical and strategic support to security agencies"
+      "Enterprise and access-to-finance clinics",
+      "Business registration and formalisation support",
+      "Employer engagement and job-linkage events"
     ]
   },
   {
-    "slug": "health",
-    "name": "Health",
-    "short": "Strengthening primary healthcare where communities need it most.",
-    "description": "The Commission invests in primary healthcare centres, medical outreach and health-system strengthening across underserved LGAs, coordinating with state ministries and development partners.",
+    "slug": "inclusion",
+    "name": "Inclusion — Young Women & PWDs",
+    "short": "A structure that is not complete until it includes everyone.",
+    "description": "Deliberate inclusion of young women and young persons with disabilities across every level of the programme's structure, with dedicated leadership positions and accessibility requirements for programme activities.",
     "programmes": [
-      "Primary healthcare centre rehabilitation",
-      "Medical outreach missions",
-      "Maternal and child health support"
-    ]
-  },
-  {
-    "slug": "education",
-    "name": "Education & Human Capital",
-    "short": "Classrooms, skills and scholarships for the region's young majority.",
-    "description": "From rebuilding classrooms to digital skills and scholarship programmes, the Commission develops the human capital of a region where most citizens are under 30.",
-    "programmes": [
-      "School rehabilitation and classroom construction",
-      "Scholarship and bursary schemes",
-      "Teacher development support"
-    ]
-  },
-  {
-    "slug": "solid-minerals",
-    "name": "Solid Minerals Development",
-    "short": "Responsible mining that benefits host communities.",
-    "description": "The zone holds some of Nigeria's richest mineral belts — lithium, tin, barite, iron ore, coal. The Commission works with the Federal Ministry of Solid Minerals and state governments to develop community-based mining cooperatives, promote responsible practices and keep value in the region. The Act also mandates NCDC to assess and report on projects run by mining and other companies operating in the zone.",
-    "programmes": [
-      "Community-based mining cooperatives",
-      "Responsible-mining partnerships with FMSD and states",
-      "Statutory assessment of extractive-sector projects"
-    ]
-  },
-  {
-    "slug": "ecology",
-    "name": "Ecology & Erosion Control",
-    "short": "Confronting flooding, erosion and environmental degradation.",
-    "description": "Tackling the ecological challenges named in the Commission's founding Act — gully erosion, seasonal flooding along the Niger-Benue system, deforestation and land degradation.",
-    "programmes": [
-      "Flood-resilience works along the Niger–Benue valleys",
-      "Gully-erosion control interventions",
-      "Watershed and reforestation programmes"
-    ]
-  },
-  {
-    "slug": "youth-innovation",
-    "name": "Youth, Women & Innovation",
-    "short": "Empowerment, digital skills and inclusion for the region's future.",
-    "description": "Empowerment programmes targeting youths, women and persons with disabilities, plus a planned regional innovation hub promoting creativity, digital skills and job creation.",
-    "programmes": [
-      "Regional innovation hub (digital skills & job creation)",
-      "Women and PWD empowerment schemes",
-      "Youth enterprise support"
+      "Young women's leadership positions at every level",
+      "Accessibility standards for programme activities",
+      "Outreach to out-of-school and rural young people"
     ]
   }
 ]

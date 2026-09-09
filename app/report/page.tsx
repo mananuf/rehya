@@ -4,26 +4,26 @@ import { StaticForm } from "@/components/site/static-form";
 import { STATES } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Report a Project",
+  title: "Report an Issue",
   description:
-    "Citizen project reporting — flag abandoned works, quality concerns or misconduct on any project in the North Central region, anonymously if you prefer.",
+    "Report anyone demanding money in the programme's name, misconduct by a coordinator, or impersonation of RHYE — anonymously if you prefer.",
 };
 
 const STEPS = [
   {
     number: "01",
     title: "Tell us where",
-    body: "The state, LGA and community — and the project name if you know it.",
+    body: "The state, the local government area and the community — and the activity or position involved, if you know it.",
   },
   {
     number: "02",
     title: "Tell us what",
-    body: "Abandoned site, slow progress, poor materials, safety hazard, or suspected misconduct.",
+    body: "A demand for payment, someone claiming a position they do not hold, misconduct by a coordinator, or conduct that breaches the peace and non-violence charge.",
   },
   {
     number: "03",
-    title: "We verify",
-    body: "Reports are triaged by our M&E team and checked against field inspections. You can remain anonymous.",
+    title: "We act",
+    body: "Reports are triaged at the National Secretariat and checked with the relevant state coordinating unit. You can remain anonymous.",
   },
 ];
 
@@ -31,10 +31,10 @@ export default function ReportPage() {
   return (
     <PageShell>
       <PageHeader
-        eyebrow="Citizen Reporting"
+        eyebrow="Report an Issue"
         title="You see it."
         titleMuted="We act on it."
-        lead="Development only works when communities can hold it to account. Use this form to flag an abandoned project, poor-quality work, or misconduct — anonymously if you prefer. Every report reaches the Commission's monitoring & evaluation team."
+        lead="Participation in this programme is free, at every level. If someone demands money in its name, claims a position they do not hold, or breaches the charge against violence and hate speech, report it here — anonymously if you prefer. Every report reaches the National Secretariat."
       />
       <PageSection>
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
@@ -70,13 +70,13 @@ export default function ReportPage() {
                     label: "LGA / Community",
                     type: "text",
                     required: true,
-                    placeholder: "e.g. Guma LGA, Daudu",
+                    placeholder: "e.g. Jos North LGA, Nassarawa Gwong",
                   },
                   {
-                    name: "project",
-                    label: "Project name",
+                    name: "activity",
+                    label: "Activity or position involved",
                     type: "text",
-                    placeholder: "If known",
+                    placeholder: "If known — e.g. ward coordinator, training event",
                   },
                   {
                     name: "details",
@@ -84,7 +84,7 @@ export default function ReportPage() {
                     type: "textarea",
                     required: true,
                     placeholder:
-                      "Describe what you saw — dates, conditions, anything that helps us verify.",
+                      "Describe what happened — dates, names or positions claimed, amounts demanded, anything that helps us verify.",
                   },
                   {
                     name: "contact",
@@ -95,8 +95,8 @@ export default function ReportPage() {
                 ]}
                 submitLabel="Submit report"
                 successTitle="Report received. Thank you."
-                successBody="Your report has been logged for the Commission's monitoring & evaluation team. If you provided contact details, we may reach out to verify — your identity is never shared."
-                footnote="Prototype notice: this demonstration form does not transmit data. In production, reports are encrypted and routed to the M&E directorate."
+                successBody="Your report has been logged for the National Secretariat. If you provided contact details, we may reach out to verify — your identity is never shared with the person reported."
+                footnote="Prototype notice: this demonstration form does not transmit data. In production, reports are encrypted and routed to the National Secretariat."
               />
             </div>
           </div>

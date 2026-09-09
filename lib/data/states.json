@@ -1,19 +1,402 @@
 [
   {
+    "slug": "abia",
+    "name": "Abia",
+    "epithet": "God's Own State",
+    "capital": "Umuahia",
+    "lgas": 17,
+    "lat": 5.53,
+    "lng": 7.49,
+    "zone": "South East",
+    "summary": "Mobilisation across Abia State's 17 local government areas, coordinated from Umuahia. The South East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Ward-level civic education and voter-awareness drives across all 17 local government areas",
+      "Leadership and community-organising training for local government and ward mobilisers",
+      "Young farmers' clusters and market-linkage support at local government level"
+    ],
+    "office": "RHYE State Coordinating Unit, Umuahia",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "adamawa",
+    "name": "Adamawa",
+    "epithet": "Land of Beauty",
+    "capital": "Yola",
+    "lgas": 21,
+    "lat": 9.23,
+    "lng": 12.46,
+    "zone": "North East",
+    "summary": "Mobilisation across Adamawa State's 21 local government areas, coordinated from Yola. The North East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Youth town halls in Yola connecting young people to their elected representatives",
+      "Digital skills training clusters and signposting to federal technology programmes",
+      "Enterprise and access-to-finance clinics for young business owners in Yola"
+    ],
+    "office": "RHYE State Coordinating Unit, Yola",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "akwa-ibom",
+    "name": "Akwa Ibom",
+    "epithet": "Land of Promise",
+    "capital": "Uyo",
+    "lgas": 31,
+    "lat": 5.04,
+    "lng": 7.93,
+    "zone": "South South",
+    "summary": "Mobilisation across Akwa Ibom State's 31 local government areas, coordinated from Uyo. The South South state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions",
+      "Student loan scheme awareness clinics on campuses across Akwa Ibom",
+      "Outreach to markets, motor parks and religious institutions across the state"
+    ],
+    "office": "RHYE State Coordinating Unit, Uyo",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "anambra",
+    "name": "Anambra",
+    "epithet": "Light of the Nation",
+    "capital": "Awka",
+    "lgas": 21,
+    "lat": 6.21,
+    "lng": 7.07,
+    "zone": "South East",
+    "summary": "Mobilisation across Anambra State's 21 local government areas, coordinated from Awka. The South East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Leadership and community-organising training for local government and ward mobilisers",
+      "Young farmers' clusters and market-linkage support at local government level",
+      "Young women's and PWD participation drives within the state coordinating structure"
+    ],
+    "office": "RHYE State Coordinating Unit, Awka",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "bauchi",
+    "name": "Bauchi",
+    "epithet": "Pearl of Tourism",
+    "capital": "Bauchi",
+    "lgas": 20,
+    "lat": 10.31,
+    "lng": 9.84,
+    "zone": "North East",
+    "summary": "Mobilisation across Bauchi State's 20 local government areas, coordinated from Bauchi. The North East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Digital skills training clusters and signposting to federal technology programmes",
+      "Enterprise and access-to-finance clinics for young business owners in Bauchi",
+      "Ward-level civic education and voter-awareness drives across all 20 local government areas"
+    ],
+    "office": "RHYE State Coordinating Unit, Bauchi",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "bayelsa",
+    "name": "Bayelsa",
+    "epithet": "Glory of All Lands",
+    "capital": "Yenagoa",
+    "lgas": 8,
+    "lat": 4.92,
+    "lng": 6.26,
+    "zone": "South South",
+    "summary": "Mobilisation across Bayelsa State's 8 local government areas, coordinated from Yenagoa. The South South state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Student loan scheme awareness clinics on campuses across Bayelsa",
+      "Outreach to markets, motor parks and religious institutions across the state",
+      "Youth town halls in Yenagoa connecting young people to their elected representatives"
+    ],
+    "office": "RHYE State Coordinating Unit, Yenagoa",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
     "slug": "benue",
     "name": "Benue",
     "epithet": "Food Basket of the Nation",
     "capital": "Makurdi",
     "lgas": 23,
-    "lat": 7.34,
-    "lng": 8.77,
-    "summary": "Nigeria's agricultural heartland — yams, soybeans, rice, citrus — and one of the states most affected by farmer-herder conflict and displacement, making resettlement and agro-industrial recovery central to NCDC's work here.",
+    "lat": 7.73,
+    "lng": 8.53,
+    "zone": "North Central",
+    "summary": "The Benue State Coordinating Unit of the Renewed Hope Youth Engagement was inaugurated in Makurdi, with a charge to build an inclusive, results-driven structure reaching communities, markets and religious institutions across all 23 local government areas of this North Central state.",
     "activities": [
-      "Resettlement and rehabilitation support for displaced farming communities",
-      "Agro-industrial cluster and rural feeder-road planning",
-      "Erosion and flood-control assessments along the Benue valley"
+      "Young farmers' clusters and market-linkage support at local government level",
+      "Young women's and PWD participation drives within the state coordinating structure",
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions"
     ],
-    "office": "NCDC State Office, Makurdi (liaison)"
+    "office": "RHYE State Coordinating Unit, Makurdi",
+    "inaugurated": true,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "borno",
+    "name": "Borno",
+    "epithet": "Home of Peace",
+    "capital": "Maiduguri",
+    "lgas": 27,
+    "lat": 11.83,
+    "lng": 13.15,
+    "zone": "North East",
+    "summary": "Mobilisation across Borno State's 27 local government areas, coordinated from Maiduguri. The North East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Enterprise and access-to-finance clinics for young business owners in Maiduguri",
+      "Ward-level civic education and voter-awareness drives across all 27 local government areas",
+      "Leadership and community-organising training for local government and ward mobilisers"
+    ],
+    "office": "RHYE State Coordinating Unit, Maiduguri",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "cross-river",
+    "name": "Cross River",
+    "epithet": "The People's Paradise",
+    "capital": "Calabar",
+    "lgas": 18,
+    "lat": 4.98,
+    "lng": 8.34,
+    "zone": "South South",
+    "summary": "Mobilisation across Cross River State's 18 local government areas, coordinated from Calabar. The South South state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Outreach to markets, motor parks and religious institutions across the state",
+      "Youth town halls in Calabar connecting young people to their elected representatives",
+      "Digital skills training clusters and signposting to federal technology programmes"
+    ],
+    "office": "RHYE State Coordinating Unit, Calabar",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "delta",
+    "name": "Delta",
+    "epithet": "The Big Heart",
+    "capital": "Asaba",
+    "lgas": 25,
+    "lat": 6.2,
+    "lng": 6.73,
+    "zone": "South South",
+    "summary": "Mobilisation across Delta State's 25 local government areas, coordinated from Asaba. The South South state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Young women's and PWD participation drives within the state coordinating structure",
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions",
+      "Student loan scheme awareness clinics on campuses across Delta"
+    ],
+    "office": "RHYE State Coordinating Unit, Asaba",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "ebonyi",
+    "name": "Ebonyi",
+    "epithet": "Salt of the Nation",
+    "capital": "Abakaliki",
+    "lgas": 13,
+    "lat": 6.32,
+    "lng": 8.11,
+    "zone": "South East",
+    "summary": "Mobilisation across Ebonyi State's 13 local government areas, coordinated from Abakaliki. The South East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Ward-level civic education and voter-awareness drives across all 13 local government areas",
+      "Leadership and community-organising training for local government and ward mobilisers",
+      "Young farmers' clusters and market-linkage support at local government level"
+    ],
+    "office": "RHYE State Coordinating Unit, Abakaliki",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "edo",
+    "name": "Edo",
+    "epithet": "Heartbeat of the Nation",
+    "capital": "Benin City",
+    "lgas": 18,
+    "lat": 6.34,
+    "lng": 5.62,
+    "zone": "South South",
+    "summary": "Mobilisation across Edo State's 18 local government areas, coordinated from Benin City. The South South state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Youth town halls in Benin City connecting young people to their elected representatives",
+      "Digital skills training clusters and signposting to federal technology programmes",
+      "Enterprise and access-to-finance clinics for young business owners in Benin City"
+    ],
+    "office": "RHYE State Coordinating Unit, Benin City",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "ekiti",
+    "name": "Ekiti",
+    "epithet": "Land of Honour and Integrity",
+    "capital": "Ado-Ekiti",
+    "lgas": 16,
+    "lat": 7.62,
+    "lng": 5.22,
+    "zone": "South West",
+    "summary": "Mobilisation across Ekiti State's 16 local government areas, coordinated from Ado-Ekiti. The South West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions",
+      "Student loan scheme awareness clinics on campuses across Ekiti",
+      "Outreach to markets, motor parks and religious institutions across the state"
+    ],
+    "office": "RHYE State Coordinating Unit, Ado-Ekiti",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "enugu",
+    "name": "Enugu",
+    "epithet": "Coal City State",
+    "capital": "Enugu",
+    "lgas": 17,
+    "lat": 6.46,
+    "lng": 7.55,
+    "zone": "South East",
+    "summary": "Mobilisation across Enugu State's 17 local government areas, coordinated from Enugu. The South East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Leadership and community-organising training for local government and ward mobilisers",
+      "Young farmers' clusters and market-linkage support at local government level",
+      "Young women's and PWD participation drives within the state coordinating structure"
+    ],
+    "office": "RHYE State Coordinating Unit, Enugu",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "gombe",
+    "name": "Gombe",
+    "epithet": "Jewel in the Savannah",
+    "capital": "Gombe",
+    "lgas": 11,
+    "lat": 10.29,
+    "lng": 11.17,
+    "zone": "North East",
+    "summary": "Mobilisation across Gombe State's 11 local government areas, coordinated from Gombe. The North East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Digital skills training clusters and signposting to federal technology programmes",
+      "Enterprise and access-to-finance clinics for young business owners in Gombe",
+      "Ward-level civic education and voter-awareness drives across all 11 local government areas"
+    ],
+    "office": "RHYE State Coordinating Unit, Gombe",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "imo",
+    "name": "Imo",
+    "epithet": "Eastern Heartland",
+    "capital": "Owerri",
+    "lgas": 27,
+    "lat": 5.48,
+    "lng": 7.03,
+    "zone": "South East",
+    "summary": "Mobilisation across Imo State's 27 local government areas, coordinated from Owerri. The South East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Student loan scheme awareness clinics on campuses across Imo",
+      "Outreach to markets, motor parks and religious institutions across the state",
+      "Youth town halls in Owerri connecting young people to their elected representatives"
+    ],
+    "office": "RHYE State Coordinating Unit, Owerri",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "jigawa",
+    "name": "Jigawa",
+    "epithet": "The New World",
+    "capital": "Dutse",
+    "lgas": 27,
+    "lat": 11.76,
+    "lng": 9.34,
+    "zone": "North West",
+    "summary": "Mobilisation across Jigawa State's 27 local government areas, coordinated from Dutse. The North West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Young farmers' clusters and market-linkage support at local government level",
+      "Young women's and PWD participation drives within the state coordinating structure",
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions"
+    ],
+    "office": "RHYE State Coordinating Unit, Dutse",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "kaduna",
+    "name": "Kaduna",
+    "epithet": "Centre of Learning",
+    "capital": "Kaduna",
+    "lgas": 23,
+    "lat": 10.52,
+    "lng": 7.44,
+    "zone": "North West",
+    "summary": "Mobilisation across Kaduna State's 23 local government areas, coordinated from Kaduna. The North West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Enterprise and access-to-finance clinics for young business owners in Kaduna",
+      "Ward-level civic education and voter-awareness drives across all 23 local government areas",
+      "Leadership and community-organising training for local government and ward mobilisers"
+    ],
+    "office": "RHYE State Coordinating Unit, Kaduna",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "kano",
+    "name": "Kano",
+    "epithet": "Centre of Commerce",
+    "capital": "Kano",
+    "lgas": 44,
+    "lat": 12,
+    "lng": 8.52,
+    "zone": "North West",
+    "summary": "Mobilisation across Kano State's 44 local government areas, coordinated from Kano. The North West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Outreach to markets, motor parks and religious institutions across the state",
+      "Youth town halls in Kano connecting young people to their elected representatives",
+      "Digital skills training clusters and signposting to federal technology programmes"
+    ],
+    "office": "RHYE State Coordinating Unit, Kano",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "katsina",
+    "name": "Katsina",
+    "epithet": "Home of Hospitality",
+    "capital": "Katsina",
+    "lgas": 34,
+    "lat": 12.99,
+    "lng": 7.6,
+    "zone": "North West",
+    "summary": "Mobilisation across Katsina State's 34 local government areas, coordinated from Katsina. The North West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Young women's and PWD participation drives within the state coordinating structure",
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions",
+      "Student loan scheme awareness clinics on campuses across Katsina"
+    ],
+    "office": "RHYE State Coordinating Unit, Katsina",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "kebbi",
+    "name": "Kebbi",
+    "epithet": "Land of Equity",
+    "capital": "Birnin Kebbi",
+    "lgas": 21,
+    "lat": 12.45,
+    "lng": 4.2,
+    "zone": "North West",
+    "summary": "Mobilisation across Kebbi State's 21 local government areas, coordinated from Birnin Kebbi. The North West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Ward-level civic education and voter-awareness drives across all 21 local government areas",
+      "Leadership and community-organising training for local government and ward mobilisers",
+      "Young farmers' clusters and market-linkage support at local government level"
+    ],
+    "office": "RHYE State Coordinating Unit, Birnin Kebbi",
+    "inaugurated": false,
+    "inauguratedOn": null
   },
   {
     "slug": "kogi",
@@ -23,13 +406,16 @@
     "lgas": 21,
     "lat": 7.8,
     "lng": 6.74,
-    "summary": "Where the Niger meets the Benue. Rich in coal, iron ore and limestone, with Ajaokuta at its centre — solid-minerals beneficiation and flood resilience anchor the Commission's agenda in Kogi.",
+    "zone": "North Central",
+    "summary": "Mobilisation across Kogi State's 21 local government areas, coordinated from Lokoja. The North Central state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
     "activities": [
-      "Community-based solid-minerals development partnerships",
-      "Flood-resilience and riverbank protection programmes",
-      "Support for agro-processing along the confluence corridor"
+      "Youth town halls in Lokoja connecting young people to their elected representatives",
+      "Digital skills training clusters and signposting to federal technology programmes",
+      "Enterprise and access-to-finance clinics for young business owners in Lokoja"
     ],
-    "office": "NCDC State Office, Lokoja (liaison)"
+    "office": "RHYE State Coordinating Unit, Lokoja",
+    "inaugurated": false,
+    "inauguratedOn": null
   },
   {
     "slug": "kwara",
@@ -39,13 +425,35 @@
     "lgas": 16,
     "lat": 8.5,
     "lng": 4.55,
-    "summary": "A gateway between the North and South-West with growing agribusiness, ICT and education sectors — NCDC's focus here is youth innovation, human capital and cross-regional trade infrastructure.",
+    "zone": "North Central",
+    "summary": "Mobilisation across Kwara State's 16 local government areas, coordinated from Ilorin. The North Central state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
     "activities": [
-      "Youth digital-skills and innovation hub development",
-      "Agribusiness incubation support",
-      "Trade-corridor infrastructure planning"
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions",
+      "Student loan scheme awareness clinics on campuses across Kwara",
+      "Outreach to markets, motor parks and religious institutions across the state"
     ],
-    "office": "NCDC State Office, Ilorin (liaison)"
+    "office": "RHYE State Coordinating Unit, Ilorin",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "lagos",
+    "name": "Lagos",
+    "epithet": "Centre of Excellence",
+    "capital": "Ikeja",
+    "lgas": 20,
+    "lat": 6.6,
+    "lng": 3.35,
+    "zone": "South West",
+    "summary": "Mobilisation across Lagos State's 20 local government areas, coordinated from Ikeja. The South West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Leadership and community-organising training for local government and ward mobilisers",
+      "Young farmers' clusters and market-linkage support at local government level",
+      "Young women's and PWD participation drives within the state coordinating structure"
+    ],
+    "office": "RHYE State Coordinating Unit, Ikeja",
+    "inaugurated": false,
+    "inauguratedOn": null
   },
   {
     "slug": "nasarawa",
@@ -55,14 +463,16 @@
     "lgas": 13,
     "lat": 8.49,
     "lng": 8.52,
-    "summary": "Host of the Commission's headquarters in Lafia and one of Nigeria's richest solid-minerals belts — lithium, barite, tin — with fast-growing peri-urban corridors serving the FCT.",
+    "zone": "North Central",
+    "summary": "Mobilisation across Nasarawa State's 13 local government areas, coordinated from Lafia. The North Central state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
     "activities": [
-      "NCDC national headquarters, Lafia",
-      "Responsible-mining cooperatives with state government and federal ministry",
-      "Peri-urban infrastructure and housing studies"
+      "Digital skills training clusters and signposting to federal technology programmes",
+      "Enterprise and access-to-finance clinics for young business owners in Lafia",
+      "Ward-level civic education and voter-awareness drives across all 13 local government areas"
     ],
-    "office": "NCDC Headquarters, Lafia",
-    "isHq": true
+    "office": "RHYE State Coordinating Unit, Lafia",
+    "inaugurated": false,
+    "inauguratedOn": null
   },
   {
     "slug": "niger",
@@ -70,15 +480,94 @@
     "epithet": "The Power State",
     "capital": "Minna",
     "lgas": 25,
-    "lat": 9.93,
+    "lat": 9.62,
     "lng": 6.55,
-    "summary": "Nigeria's largest state by landmass, home to the Kainji, Jebba and Shiroro hydropower dams — energy, irrigation and the rehabilitation of communities affected by banditry define NCDC's priorities.",
+    "zone": "North Central",
+    "summary": "Mobilisation across Niger State's 25 local government areas, coordinated from Minna. The North Central state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
     "activities": [
-      "Rehabilitation and reconstruction planning for conflict-affected communities",
-      "Irrigation and dam-community development programmes",
-      "Rural electrification gap assessments"
+      "Student loan scheme awareness clinics on campuses across Niger",
+      "Outreach to markets, motor parks and religious institutions across the state",
+      "Youth town halls in Minna connecting young people to their elected representatives"
     ],
-    "office": "NCDC State Office, Minna (liaison)"
+    "office": "RHYE State Coordinating Unit, Minna",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "ogun",
+    "name": "Ogun",
+    "epithet": "Gateway State",
+    "capital": "Abeokuta",
+    "lgas": 20,
+    "lat": 7.15,
+    "lng": 3.35,
+    "zone": "South West",
+    "summary": "Mobilisation across Ogun State's 20 local government areas, coordinated from Abeokuta. The South West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Young farmers' clusters and market-linkage support at local government level",
+      "Young women's and PWD participation drives within the state coordinating structure",
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions"
+    ],
+    "office": "RHYE State Coordinating Unit, Abeokuta",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "ondo",
+    "name": "Ondo",
+    "epithet": "Sunshine State",
+    "capital": "Akure",
+    "lgas": 18,
+    "lat": 7.25,
+    "lng": 5.19,
+    "zone": "South West",
+    "summary": "Mobilisation across Ondo State's 18 local government areas, coordinated from Akure. The South West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Enterprise and access-to-finance clinics for young business owners in Akure",
+      "Ward-level civic education and voter-awareness drives across all 18 local government areas",
+      "Leadership and community-organising training for local government and ward mobilisers"
+    ],
+    "office": "RHYE State Coordinating Unit, Akure",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "osun",
+    "name": "Osun",
+    "epithet": "Land of Virtue",
+    "capital": "Osogbo",
+    "lgas": 30,
+    "lat": 7.77,
+    "lng": 4.56,
+    "zone": "South West",
+    "summary": "Mobilisation across Osun State's 30 local government areas, coordinated from Osogbo. The South West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Outreach to markets, motor parks and religious institutions across the state",
+      "Youth town halls in Osogbo connecting young people to their elected representatives",
+      "Digital skills training clusters and signposting to federal technology programmes"
+    ],
+    "office": "RHYE State Coordinating Unit, Osogbo",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "oyo",
+    "name": "Oyo",
+    "epithet": "Pace Setter State",
+    "capital": "Ibadan",
+    "lgas": 33,
+    "lat": 7.38,
+    "lng": 3.9,
+    "zone": "South West",
+    "summary": "Mobilisation across Oyo State's 33 local government areas, coordinated from Ibadan. The South West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Young women's and PWD participation drives within the state coordinating structure",
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions",
+      "Student loan scheme awareness clinics on campuses across Oyo"
+    ],
+    "office": "RHYE State Coordinating Unit, Ibadan",
+    "inaugurated": false,
+    "inauguratedOn": null
   },
   {
     "slug": "plateau",
@@ -86,30 +575,132 @@
     "epithet": "Home of Peace and Tourism",
     "capital": "Jos",
     "lgas": 17,
-    "lat": 9.92,
-    "lng": 8.9,
-    "summary": "The tin city and highland agriculture powerhouse. Restoring peace, resettling displaced communities and reviving tourism and mining value chains are at the core of the Commission's Plateau agenda.",
+    "lat": 9.9,
+    "lng": 8.86,
+    "zone": "North Central",
+    "summary": "The Plateau State Coordinating Unit of the Renewed Hope Youth Engagement was inaugurated in Jos, with a charge to build an inclusive, results-driven structure reaching communities, markets and religious institutions across all 17 local government areas of this North Central state.",
     "activities": [
-      "Post-conflict resettlement and reconstruction of communities",
-      "Highland agriculture (potatoes, vegetables) value-chain support",
-      "Tin and columbite value-addition partnerships"
+      "Ward-level civic education and voter-awareness drives across all 17 local government areas",
+      "Leadership and community-organising training for local government and ward mobilisers",
+      "Young farmers' clusters and market-linkage support at local government level"
     ],
-    "office": "NCDC State Office, Jos (liaison)"
+    "office": "RHYE State Coordinating Unit, Jos",
+    "inaugurated": true,
+    "inauguratedOn": "2026-08-05"
+  },
+  {
+    "slug": "rivers",
+    "name": "Rivers",
+    "epithet": "Treasure Base of the Nation",
+    "capital": "Port Harcourt",
+    "lgas": 23,
+    "lat": 4.82,
+    "lng": 7.03,
+    "zone": "South South",
+    "summary": "Mobilisation across Rivers State's 23 local government areas, coordinated from Port Harcourt. The South South state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Youth town halls in Port Harcourt connecting young people to their elected representatives",
+      "Digital skills training clusters and signposting to federal technology programmes",
+      "Enterprise and access-to-finance clinics for young business owners in Port Harcourt"
+    ],
+    "office": "RHYE State Coordinating Unit, Port Harcourt",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "sokoto",
+    "name": "Sokoto",
+    "epithet": "Seat of the Caliphate",
+    "capital": "Sokoto",
+    "lgas": 23,
+    "lat": 13.06,
+    "lng": 5.24,
+    "zone": "North West",
+    "summary": "Mobilisation across Sokoto State's 23 local government areas, coordinated from Sokoto. The North West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions",
+      "Student loan scheme awareness clinics on campuses across Sokoto",
+      "Outreach to markets, motor parks and religious institutions across the state"
+    ],
+    "office": "RHYE State Coordinating Unit, Sokoto",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "taraba",
+    "name": "Taraba",
+    "epithet": "Nature's Gift to the Nation",
+    "capital": "Jalingo",
+    "lgas": 16,
+    "lat": 8.89,
+    "lng": 11.37,
+    "zone": "North East",
+    "summary": "Mobilisation across Taraba State's 16 local government areas, coordinated from Jalingo. The North East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Leadership and community-organising training for local government and ward mobilisers",
+      "Young farmers' clusters and market-linkage support at local government level",
+      "Young women's and PWD participation drives within the state coordinating structure"
+    ],
+    "office": "RHYE State Coordinating Unit, Jalingo",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "yobe",
+    "name": "Yobe",
+    "epithet": "Pride of the Sahel",
+    "capital": "Damaturu",
+    "lgas": 17,
+    "lat": 11.75,
+    "lng": 11.97,
+    "zone": "North East",
+    "summary": "Mobilisation across Yobe State's 17 local government areas, coordinated from Damaturu. The North East state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Digital skills training clusters and signposting to federal technology programmes",
+      "Enterprise and access-to-finance clinics for young business owners in Damaturu",
+      "Ward-level civic education and voter-awareness drives across all 17 local government areas"
+    ],
+    "office": "RHYE State Coordinating Unit, Damaturu",
+    "inaugurated": false,
+    "inauguratedOn": null
+  },
+  {
+    "slug": "zamfara",
+    "name": "Zamfara",
+    "epithet": "Farming is Our Pride",
+    "capital": "Gusau",
+    "lgas": 14,
+    "lat": 12.16,
+    "lng": 6.66,
+    "zone": "North West",
+    "summary": "Mobilisation across Zamfara State's 14 local government areas, coordinated from Gusau. The North West state's coordinating unit carries civic education, peace advocacy and skills signposting from the state capital down to ward level.",
+    "activities": [
+      "Student loan scheme awareness clinics on campuses across Zamfara",
+      "Outreach to markets, motor parks and religious institutions across the state",
+      "Youth town halls in Gusau connecting young people to their elected representatives"
+    ],
+    "office": "RHYE State Coordinating Unit, Gusau",
+    "inaugurated": false,
+    "inauguratedOn": null
   },
   {
     "slug": "fct",
-    "name": "Federal Capital Territory",
+    "name": "FCT",
     "epithet": "Centre of Unity",
     "capital": "Abuja",
     "lgas": 6,
     "lat": 9.06,
     "lng": 7.49,
-    "summary": "The nation's capital sits within the North Central zone. NCDC coordinates with the FCT Administration on satellite-town infrastructure, rural area councils and regional integration.",
+    "zone": "North Central",
+    "summary": "Abuja hosts the programme's National Secretariat as well as its own coordinating unit for the six area councils of the Federal Capital Territory — the convening point for national coordinator inductions and zonal reviews.",
     "activities": [
-      "Satellite-town and area-council development coordination",
-      "Regional transport integration with FCT Administration",
-      "Liaison with federal ministries and development partners"
+      "Young farmers' clusters and market-linkage support at local government level",
+      "Young women's and PWD participation drives within the state coordinating structure",
+      "Peace advocacy against hate speech, intimidation and misinformation with religious and traditional institutions"
     ],
-    "office": "NCDC Liaison Office, Abuja"
+    "office": "RHYE National Secretariat, Abuja",
+    "inaugurated": false,
+    "inauguratedOn": null,
+    "isHq": true
   }
 ]

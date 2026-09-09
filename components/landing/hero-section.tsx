@@ -124,7 +124,7 @@ export function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Beautiful_formations_in_Jos_Nigeria.jpg/1920px-Beautiful_formations_in_Jos_Nigeria.jpg"
+          src="/images/jos-city.jpg"
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover object-center opacity-50"
@@ -170,7 +170,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-primary">
             <span className="w-8 h-px bg-primary" />
-            Federal Republic of Nigeria · Established by Act, 2024
+            Renewed Hope Agenda · 36 States + FCT · 774 LGAs
           </span>
         </div>
         
@@ -181,16 +181,16 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block whitespace-nowrap">Rebuilding the heart</span>
+            <span className="block whitespace-nowrap">Young Nigerians at</span>
             <span className="block whitespace-nowrap">
-              of{" "}
-              <span className="text-primary">Nigeria</span>
+              the{" "}
+              <span className="text-primary">centre</span>.
             </span>
           </h1>
           <p className={`mt-6 text-lg text-muted-foreground max-w-[600px] leading-relaxed transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}>
-            The Commission drives reconstruction, rehabilitation and sustainable development across 6 states and the FCT, serving over 20 million people.
+            A national platform mobilising young Nigerians into governance — through coordinating units in all 36 states and the FCT, and mobilisers in every one of 774 local government areas.
           </p>
         </div>
         </div>
@@ -204,10 +204,10 @@ export function HeroSection() {
       >
         <div className="max-w-[1400px] mx-auto flex items-start gap-6 lg:gap-14 flex-wrap">
           {[
-            { value: "6 States +", label: "FCT Coverage" },
-            { value: "121", label: "Local Government Areas" },
-            { value: "20M+", label: "People Served" },
-            { value: "₦140bn", label: "2026 Budget" },
+            { value: "36 States +", label: "FCT Coverage" },
+            { value: "774", label: "Local Government Areas" },
+            { value: "8,809", label: "Wards Nationwide" },
+            { value: "70M+", label: "Young Nigerians" },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col gap-1">
               <span className="text-2xl lg:text-3xl font-display text-foreground">{stat.value}</span>

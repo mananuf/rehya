@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Rebuild & Resettle",
-    description: "Restore livelihoods and communities affected by insecurity. We coordinate rehabilitation, resettlement, and recovery programmes across the region.",
-    stats: { value: "₦140bn", label: "2026 capital programme" },
+    title: "Mobilise & Organise",
+    description: "Build a coordinating structure that reaches young people where they already are — communities, markets, campuses and religious institutions — from the National Secretariat down to every ward.",
+    stats: { value: "774", label: "local government areas" },
   },
   {
     number: "02",
-    title: "Ecological Recovery",
-    description: "Combat erosion, flooding and environmental degradation. Our initiatives protect farmland, water resources and natural habitats for sustainable living.",
-    stats: { value: "1000+", label: "hectares restored" },
+    title: "Participate, Not Receive",
+    description: "The programme's founding proposition: young Nigerians as active contributors to development, taking part in governance and the political process — not standing by as beneficiaries of it.",
+    stats: { value: "8,809", label: "wards nationwide" },
   },
   {
     number: "03",
-    title: "Economic Development",
-    description: "Unlock agricultural and mineral wealth. We drive value-chain development, agro-processing and responsible mining partnerships.",
-    stats: { value: "₦85bn", label: "economic potential" },
+    title: "Train & Equip",
+    description: "Leadership, digital and enterprise training for coordinators and the young people they organise, plus signposting to the federal skills, student financing and credit schemes already available.",
+    stats: { value: "8", label: "programme pillars" },
   },
   {
     number: "04",
-    title: "Third-Party Oversight",
-    description: "Statutory authority to assess and report on development projects by government agencies and external partners in our zone.",
-    stats: { value: "100%", label: "project transparency" },
+    title: "Peace Without Compromise",
+    description: "Active participation, and a firm rejection of political violence, hate speech, intimidation and misinformation — the charge repeated at every state inauguration.",
+    stats: { value: "37", label: "coordinating units" },
   },
 ];
 
@@ -165,16 +165,16 @@ export function FeaturesSection() {
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Transforming
+                Mobilising
                 <br />
-                <span className="text-primary">the North.</span>
+                <span className="text-primary">a generation.</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pb-4">
               <p className={`text-lg text-muted-foreground leading-relaxed transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}>
-                The North Central Development Commission works across 6 states and the FCT to rebuild communities, restore livelihoods, and drive sustainable development.
+                The Renewed Hope Youth Engagement works across all 36 states and the Federal Capital Territory to bring young Nigerians into governance — organised, trained and accountable.
               </p>
             </div>
           </div>
@@ -209,8 +209,8 @@ export function FeaturesSection() {
             {/* Right: image, full height */}
             <div className="hidden lg:block relative w-[42%] shrink-0 overflow-hidden">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Farmland_in_Konshisha_LGA%2C_Benue_State.jpg/1920px-Farmland_in_Konshisha_LGA%2C_Benue_State.jpg"
-                alt="Benue farmland"
+                src="/images/classroom.jpg"
+                alt="A digital skills session in a Nigerian classroom"
                 className="absolute inset-0 w-full h-full object-cover object-center"
               />
               {/* Fade left edge */}

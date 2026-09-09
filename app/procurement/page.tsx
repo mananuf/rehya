@@ -3,26 +3,26 @@ import Link from "next/link";
 import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell";
 
 export const metadata: Metadata = {
-  title: "Procurement & Tenders",
+  title: "Partners & Suppliers",
   description:
-    "NCDC procurement — open tenders, our procurement principles under the Public Procurement Act 2007, and how to become a vendor.",
+    "How organisations partner with the Renewed Hope Youth Engagement or supply services to its activities, and the standards expected of both.",
 };
 
 const PRINCIPLES = [
   {
     number: "01",
-    title: "Open Competition",
-    body: "Tenders are advertised publicly — on this page and in national dailies — in line with the Public Procurement Act 2007.",
+    title: "Open Invitation",
+    body: "Opportunities to supply or partner are advertised on this page. Nothing is awarded on the basis of a relationship that was never advertised.",
   },
   {
     number: "02",
     title: "Value for Money",
-    body: "Evaluation balances cost, quality and delivery capability, documented at every step.",
+    body: "The programme runs on contributed and sponsored resources. Selection balances cost, quality and delivery capability, and is documented.",
   },
   {
     number: "03",
     title: "No Middlemen",
-    body: "The Commission never charges bid-collection fees through agents. Verify every notice against this page.",
+    body: "The programme charges no fee to bid, to partner, or to be listed as a supplier, and authorises no agent to collect one. Verify every notice against this page.",
   },
 ];
 
@@ -30,10 +30,10 @@ export default function ProcurementPage() {
   return (
     <PageShell>
       <PageHeader
-        eyebrow="Procurement"
-        title="Open tenders."
+        eyebrow="Partners &amp; Suppliers"
+        title="Open invitations."
         titleMuted="Open process."
-        lead="Every contract the Commission awards begins here — advertised openly, evaluated on record, and published when awarded."
+        lead="Organisations that want to partner with the programme, sponsor an activity, or supply services to one, start here. RHYE is not a public institution and runs no statutory tender process — but what it does award, it advertises."
       />
       <PageSection>
         <div className="grid sm:grid-cols-3 gap-4 lg:gap-6">
@@ -57,15 +57,15 @@ export default function ProcurementPage() {
 
         <div className="mt-6 border border-dashed border-border bg-white p-10 lg:p-16 text-center">
           <span className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground">
-            Active tenders
+Open opportunities
           </span>
           <h2 className="mt-3 text-3xl font-display text-foreground">
-            No tenders are currently advertised
+Nothing is currently advertised
           </h2>
           <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-md mx-auto">
-            Procurement notices for the 2026 capital programme will be
-            published on this page as packages are approved. Prospective
-            vendors can register interest via the{" "}
+            Partnership and supply opportunities will be published on this page
+            as activities are scheduled. Prospective partners and suppliers can
+            register interest via the{" "}
             <Link href="/contact" className="text-primary underline underline-offset-4">
               contact page
             </Link>

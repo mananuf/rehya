@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell";
-import { PROJECTS, STATES, STATE_IMAGES } from "@/lib/content";
+import { PROJECTS, STATES, stateImage } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "States & FCT",
   description:
-    "The six states and the Federal Capital Territory where the North Central Development Commission works.",
+    "The 36 states and the Federal Capital Territory where the Renewed Hope Youth Engagement has a coordinating unit.",
 };
 
 export default function StatesPage() {
@@ -14,9 +14,9 @@ export default function StatesPage() {
     <PageShell>
       <PageHeader
         eyebrow="Where We Work"
-        title="Six states."
+        title="Thirty-six states."
         titleMuted="Plus the capital."
-        lead="Each state page carries the Commission's activities, projects and liaison office for that state."
+        lead="Each state page carries the coordinating unit's activities, programmes and contact point for that state."
       />
       <PageSection>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
@@ -31,7 +31,7 @@ export default function StatesPage() {
                 <div className="relative aspect-[16/9] overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={STATE_IMAGES[s.slug]}
+                    src={stateImage(s.slug)}
                     alt=""
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -52,7 +52,7 @@ export default function StatesPage() {
                     {s.summary}
                   </p>
                   <p className="mt-auto pt-4 text-xs font-mono text-muted-foreground">
-                    {s.capital} · {s.lgas} LGAs · {count} project
+                    {s.capital} · {s.lgas} LGAs · {count} programme
                     {count === 1 ? "" : "s"}
                   </p>
                 </div>

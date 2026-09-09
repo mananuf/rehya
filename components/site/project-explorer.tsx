@@ -62,8 +62,8 @@ function FilterGroup({
 
 const STATUS_STYLES: Record<ProjectStatus, string> = {
   planned: "bg-muted text-muted-foreground",
-  procurement: "bg-amber-100 text-amber-800",
-  ongoing: "bg-secondary text-primary",
+  recruiting: "bg-amber-100 text-amber-800",
+  running: "bg-secondary text-primary",
   completed: "bg-primary text-white",
 };
 
@@ -108,7 +108,7 @@ export function ProjectExplorer({
           }))}
         />
         <FilterGroup
-          label="Focus Area"
+          label="Pillar"
           value={sector}
           onChange={setSector}
           options={FOCUS_AREAS.map((f) => ({ value: f.slug, label: f.name }))}
@@ -125,7 +125,7 @@ export function ProjectExplorer({
       </div>
 
       <p aria-live="polite" className="mt-8 text-xs font-mono text-muted-foreground">
-        {filtered.length} project{filtered.length === 1 ? "" : "s"}
+        {filtered.length} programme{filtered.length === 1 ? "" : "s"}
         {state || sector || status ? " match your filters" : " on record"}
       </p>
 
@@ -162,7 +162,7 @@ export function ProjectExplorer({
               <div className="mt-auto pt-6">
                 <div className="flex items-center justify-between text-xs mb-2">
                   <span className="font-mono text-muted-foreground">
-                    {p.budget}
+                    {p.reach}
                   </span>
                   <span className="font-medium text-foreground">
                     {p.progress}%
@@ -188,11 +188,11 @@ export function ProjectExplorer({
       ) : (
         <div className="mt-4 border border-dashed border-border bg-white p-16 text-center">
           <p className="text-xl font-display text-foreground">
-            No projects match those filters.
+            No programmes match those filters.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Try clearing a filter — or check back as the Commission&apos;s
-            project book grows.
+            Try clearing a filter — or check back as the programme book grows
+            with each state coordinating unit.
           </p>
         </div>
       )}

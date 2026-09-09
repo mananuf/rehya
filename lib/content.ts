@@ -14,17 +14,29 @@ export type StateInfo = {
   lgas: number;
   lat: number;
   lng: number;
+  zone: string;
   summary: string;
   activities: string[];
   office: string;
+  /** True where a coordinating unit has been publicly inaugurated. */
+  inaugurated: boolean;
+  /** ISO date of the inauguration, where one was published. */
+  inauguratedOn: string | null;
   isHq?: boolean;
 };
+
+/**
+ * "patron" — offices under whose agenda the programme operates (the Presidency
+ * and the APC national leadership). "programme" — RHYE's own coordinators.
+ */
+export type LeaderTier = "patron" | "programme";
 
 export type Leader = {
   slug: string;
   name: string;
   role: string;
   represents: string;
+  tier: LeaderTier;
   verified: boolean;
   bio: string;
 };
@@ -37,7 +49,11 @@ export type FocusArea = {
   programmes: string[];
 };
 
-export type ProjectStatus = "planned" | "procurement" | "ongoing" | "completed";
+export type ProjectStatus =
+  | "planned"
+  | "recruiting"
+  | "running"
+  | "completed";
 
 export type Project = {
   slug: string;
@@ -45,7 +61,8 @@ export type Project = {
   state: string;
   sector: string;
   status: ProjectStatus;
-  budget: string;
+  /** Participants, coordinators or units the programme line reaches. */
+  reach: string;
   progress: number;
   lga: string;
   summary: string;
@@ -81,20 +98,30 @@ export const getFocusArea = (slug: string) =>
 
 export const PROJECT_STATUSES: ProjectStatus[] = [
   "planned",
-  "procurement",
-  "ongoing",
+  "recruiting",
+  "running",
   "completed",
 ];
 
 export const STATUS_LABELS: Record<ProjectStatus, string> = {
   planned: "Planned",
-  procurement: "Procurement",
-  ongoing: "Ongoing",
+  recruiting: "Recruiting",
+  running: "Running",
   completed: "Completed",
 };
 
-/** State slug → local image, for state pages/cards. */
-export const STATE_IMAGES: Record<string, string> = {
+export const PATRONS = LEADERSHIP.filter((l) => l.tier === "patron");
+export const PROGRAMME_LEADERSHIP = LEADERSHIP.filter(
+  (l) => l.tier === "programme"
+);
+
+/**
+ * State slug → local image. The programme covers all 37 coordinating units but
+ * the library only holds a handful of photographs, so states without one of
+ * their own fall back to a stable pick from the shared pool — stable so the
+ * same state always shows the same picture between renders.
+ */
+const STATE_IMAGE_OVERRIDES: Record<string, string> = {
   benue: "/images/farmland.jpg",
   kogi: "/images/confluence.jpg",
   kwara: "/images/vegetable-farm.jpg",
@@ -103,6 +130,40 @@ export const STATE_IMAGES: Record<string, string> = {
   plateau: "/images/hero-plateau.jpg",
   fct: "/images/zuma.jpg",
 };
+
+const STATE_IMAGE_POOL = [
+  "/images/classroom.jpg",
+  "/images/market.jpg",
+  "/images/jos-city.jpg",
+  "/images/farmland.jpg",
+  "/images/yams.jpg",
+  "/images/engineers.jpg",
+  "/images/road-construction.jpg",
+  "/images/vegetable-farm.jpg",
+];
+
+/**
+ * Assign pool images by position rather than by hashing the slug, so the
+ * fallbacks cycle evenly and two states listed next to each other never draw
+ * the same photograph.
+ */
+const STATE_IMAGE_FALLBACKS = new Map<string, string>(
+  STATES.filter((s) => !STATE_IMAGE_OVERRIDES[s.slug]).map((s, i) => [
+    s.slug,
+    STATE_IMAGE_POOL[i % STATE_IMAGE_POOL.length],
+  ])
+);
+
+export function stateImage(slug: string) {
+  return (
+    STATE_IMAGE_OVERRIDES[slug] ??
+    STATE_IMAGE_FALLBACKS.get(slug) ??
+    STATE_IMAGE_POOL[0]
+  );
+}
+
+/** @deprecated prefer {@link stateImage} — covers every state, not just seven. */
+export const STATE_IMAGES = STATE_IMAGE_OVERRIDES;
 
 export function formatDate(iso: string) {
   return new Date(iso + "T00:00:00").toLocaleDateString("en-NG", {

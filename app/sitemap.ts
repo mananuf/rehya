@@ -1,15 +1,14 @@
 import type { MetadataRoute } from "next";
 import { PROJECTS, STATES } from "@/lib/content";
 import { NEWS } from "@/lib/news-data";
-
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ncdc.gov.ng";
+import { SITE_URL as BASE } from "@/lib/site-url";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
     "/about",
     "/about/leadership",
-    "/about/act",
+    "/about/charter",
     "/what-we-do",
     "/projects",
     "/states",

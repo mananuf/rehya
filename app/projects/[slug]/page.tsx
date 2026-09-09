@@ -40,9 +40,9 @@ export default async function ProjectPage({
 
   const facts = [
     { label: "Status", value: STATUS_LABELS[project.status] },
-    { label: "Budget", value: project.budget },
+    { label: "Reach", value: project.reach },
     { label: "Progress", value: `${project.progress}%` },
-    { label: "Focus Area", value: sector?.name ?? project.sector, href: `/what-we-do#${project.sector}` },
+    { label: "Pillar", value: sector?.name ?? project.sector, href: `/what-we-do#${project.sector}` },
     { label: "State", value: state?.name ?? project.state, href: `/states/${project.state}` },
     { label: "LGA", value: project.lga },
   ];

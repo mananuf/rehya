@@ -4,10 +4,11 @@ import { PageShell, PageHeader, PageSection } from "@/components/site/page-shell
 export const metadata: Metadata = {
   title: "Image Credits",
   description:
-    "Photography credits for imagery used on the NCDC website, licensed via Wikimedia Commons.",
+    "Photography credits for imagery used on the RHYE website, licensed via Wikimedia Commons.",
 };
 
 const CREDITS = [
+  { credit: "RHYE mark — supplied by the programme", license: "All rights reserved" },
   { credit: "“Beautiful formations in Jos Nigeria”, Wikimedia Commons", license: "CC BY 4.0" },
   { credit: "NASA / ISS072-E-95268 — the Niger–Benue confluence at Lokoja, via Wikimedia Commons", license: "Public domain" },
   { credit: "“Road construction, Kafanchan”, Wikimedia Commons", license: "CC BY-SA 4.0" },
@@ -29,7 +30,7 @@ export default function CreditsPage() {
         eyebrow="Legal"
         title="Image"
         titleMuted="credits."
-        lead="Photography on this prototype is sourced from Wikimedia Commons under the licenses listed below. Production imagery will be replaced with the Commission's own commissioned photography."
+        lead="Photography on this prototype is sourced from Wikimedia Commons under the licenses listed below. Production imagery will be replaced with the programme's own commissioned photography."
       />
       <PageSection>
         <ul className="border border-border bg-white divide-y divide-border">

@@ -7,25 +7,25 @@ import { ArrowUpRight, FileText, FolderOpen, Flag } from "lucide-react";
 const items = [
   {
     icon: FileText,
-    title: "The Establishment Act",
+    title: "The Programme Charter",
     description:
-      "Download the NCDC (Establishment) Act, 2024 — the Commission's founding statute.",
-    cta: "Download the Act",
-    href: "/about/act",
+      "How the programme is organised, what it does, and the conduct required of every coordinator.",
+    cta: "Read the charter",
+    href: "/about/charter",
   },
   {
     icon: FolderOpen,
-    title: "Budgets & Documents",
+    title: "Documents & Guides",
     description:
-      "The ₦140bn 2026 budget overview, strategic roadmap and official publications.",
+      "The structure framework, code of conduct, pillar guide and state inauguration reports.",
     cta: "Open the library",
     href: "/resources",
   },
   {
     icon: Flag,
-    title: "Report a Project",
+    title: "Report an Issue",
     description:
-      "See something wrong with a project in your community? Tell us — anonymously if you prefer.",
+      "Someone demanding money in the programme's name? Misconduct by a coordinator? Tell us — anonymously if you prefer.",
     cta: "Send a report",
     href: "/report",
   },
@@ -62,7 +62,7 @@ export function TransparencySection() {
           >
             <span className="inline-flex items-center gap-3 text-sm font-mono text-[#2FA45B] mb-8">
               <span className="w-12 h-px bg-[#2FA45B]" />
-              Transparency
+              Accountability
             </span>
           </div>
 
@@ -71,7 +71,7 @@ export function TransparencySection() {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
             }`}
           >
-            <span className="block">Public money.</span>
+            <span className="block">Public trust.</span>
             <span className="block text-white/40">Public record.</span>
           </h2>
 
@@ -80,8 +80,9 @@ export function TransparencySection() {
               isVisible ? "opacity-100" : "opacity-0"
             }`}
           >
-            Every naira the Commission manages is public money. Its statute,
-            budgets and delivery record belong on the public record — here.
+The programme asks young Nigerians for their time and their trust. What it is,
+            how it is structured, and how it conducts itself belong on the public
+            record — here.
           </p>
         </div>
 
