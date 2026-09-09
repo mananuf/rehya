@@ -182,7 +182,7 @@ export function HeroSection() {
       */}
       <div
         aria-hidden="true"
-        className="lg:hidden absolute bottom-0 right-0 z-[5] w-full max-w-[460px] aspect-[1050/888] pointer-events-none select-none"
+        className="lg:hidden absolute bottom-20 right-0 z-[5] w-full max-w-[460px] aspect-[1050/888] pointer-events-none select-none"
         style={{
           WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, #000 45%)",
           maskImage: "linear-gradient(to bottom, transparent 0%, #000 45%)",
