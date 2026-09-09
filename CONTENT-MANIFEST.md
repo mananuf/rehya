@@ -99,6 +99,18 @@ Photographs are Wikimedia Commons stock of Nigerian scenes, carried over from
 the NCDC template — none depict RHYE activities. States without a dedicated
 photo cycle through a shared pool (`stateImage()` in `lib/content.ts`).
 
+**`public/images/president-tinubu.jpg` — clear this before launch.** It was
+prepared from a supplied screenshot of what appears to be official State House /
+presidential media. **No licence has been established for it.** Replace it with
+an officially released or properly licensed photograph before this site is
+public, and add the credit to `/credits`.
+
+The hero portrait is captioned with the office ("President Bola Ahmed Tinubu,
+GCFR — The Renewed Hope Agenda") rather than left to imply endorsement. A large
+portrait carries much more implied association than the leadership page's text
+disclaimer does, so if the programme has no formal patronage, that caption is
+doing real work — do not remove it.
+
 ---
 
 ## Brand assets generated from your logo
@@ -113,6 +125,7 @@ Built from `~/Documents/illustrator/infinity.png`:
 | `public/favicon-{16,32,192,512}.png`, `apple-icon.png` | Favicons from the square icon |
 | `public/og.png` | 1200×630 link-preview card |
 | `public/og-logo.jpg` | 1200×1200 square preview |
+| `public/images/president-tinubu.jpg` | Hero portrait, 1050×888 — **licence unresolved, see Imagery above** |
 
 The icon green `#1B5E2E` is the template's existing `--primary` — no new colours
 were introduced. Splash screen: `components/site/splash-screen.tsx` (first paint,

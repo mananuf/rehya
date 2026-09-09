@@ -159,7 +159,41 @@ export function HeroSection() {
           />
         ))}
       </div>
-      
+
+      {/*
+        Right-hand figure. The hero reserves this space already — the copy is
+        capped at lg:max-w-[55%] — so the portrait fills it without touching the
+        headline. Two nested masks feather it: the outer fades the left edge
+        into the copy, the inner fades the base into the stats strip. Nested
+        rather than composited so it works without mask-composite support.
+      */}
+      <div
+        aria-hidden="true"
+        className="hidden lg:block absolute right-0 bottom-0 z-[5] w-[46%] h-[88%] pointer-events-none select-none"
+        style={{
+          WebkitMaskImage: "linear-gradient(to right, transparent 0%, #000 38%)",
+          maskImage: "linear-gradient(to right, transparent 0%, #000 38%)",
+        }}
+      >
+        <div
+          className="w-full h-full"
+          style={{
+            WebkitMaskImage:
+              "linear-gradient(to top, transparent 0%, #000 24%, #000 88%, transparent 100%)",
+            maskImage:
+              "linear-gradient(to top, transparent 0%, #000 24%, #000 88%, transparent 100%)",
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/president-tinubu.jpg"
+            alt=""
+            className="w-full h-full object-cover object-[45%_top]"
+            style={{ filter: "saturate(0.8) brightness(1.04)" }}
+          />
+        </div>
+      </div>
+
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 py-32 lg:py-40">
         <div className="lg:max-w-[55%]">
         {/* Eyebrow */}
@@ -198,7 +232,7 @@ export function HeroSection() {
       
       {/* Stats — 4 metrics static */}
       <div 
-        className={`relative mt-4 pb-12 sm:mt-0 sm:pb-0 sm:absolute sm:bottom-12 left-0 right-0 px-6 lg:px-12 transition-all duration-700 delay-500 ${
+        className={`relative z-10 mt-4 pb-12 sm:mt-0 sm:pb-0 sm:absolute sm:bottom-12 left-0 right-0 px-6 lg:px-12 transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -219,7 +253,18 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/*
+        Names the office rather than letting the portrait imply endorsement.
+        Shares the stats strip's baseline: stats left, attribution right.
+      */}
+      <div className="hidden lg:block absolute bottom-12 right-12 z-10 text-right max-w-[300px]">
+        <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-foreground/90 leading-relaxed">
+          President Bola Ahmed Tinubu, GCFR
+        </p>
+        <p className="mt-1 font-mono text-[10px] text-foreground/60">
+          The Renewed Hope Agenda
+        </p>
+      </div>
 
     </section>
   );
