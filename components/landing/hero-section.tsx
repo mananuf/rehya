@@ -123,15 +123,22 @@ export function HeroSection() {
     <section className="relative min-h-screen flex flex-col justify-center items-start overflow-hidden bg-background">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
+        {/*
+          Desktop keeps the town as the backdrop, with the portrait as a
+          separate figure in the reserved right-hand space further down.
+          Below lg there is no space beside the copy for that figure, so the
+          portrait becomes the backdrop itself and the town drops away.
+        */}
         <img
           src="/images/jos-city.jpg"
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover object-center opacity-50"
+          className="hidden lg:block w-full h-full object-cover object-center opacity-50"
         />
-        {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/50 to-white/20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-white/30" />
+
+        {/* Overlay for text readability — desktop */}
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-white/80 via-white/50 to-white/20" />
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-white/30" />
       </div>
 
       {/* Subtle grid lines */}
@@ -167,6 +174,33 @@ export function HeroSection() {
         into the copy, the inner fades the base into the stats strip. Nested
         rather than composited so it works without mask-composite support.
       */}
+      {/*
+        Mobile figure. The copy and stats already fill a phone screen, so the
+        portrait cannot sit clear of them — it is raised until the eyes clear
+        the stats row, and a scrim below whitens the lower face so the numbers
+        stay legible over it.
+      */}
+      <div
+        aria-hidden="true"
+        className="lg:hidden absolute bottom-0 right-0 z-[5] w-full max-w-[460px] aspect-[1050/888] pointer-events-none select-none"
+        style={{
+          WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, #000 45%)",
+          maskImage: "linear-gradient(to bottom, transparent 0%, #000 45%)",
+        }}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/president-tinubu.jpg"
+          alt=""
+          className="w-full h-full object-cover object-center"
+          style={{ filter: "saturate(0.8) brightness(1.04)" }}
+        />
+      </div>
+      <div
+        aria-hidden="true"
+        className="lg:hidden absolute inset-x-0 bottom-0 z-[6] h-[38%] max-h-[300px] pointer-events-none bg-gradient-to-t from-white via-white/90 to-transparent"
+      />
+
       <div
         aria-hidden="true"
         className="hidden lg:block absolute right-0 bottom-0 z-[5] w-[46%] h-[88%] pointer-events-none select-none"
@@ -251,6 +285,16 @@ export function HeroSection() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Mobile attribution — the portrait is the backdrop there, so it still needs naming. */}
+      <div className="lg:hidden relative z-10 px-6 pb-10 -mt-6">
+        <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-foreground/90">
+          President Bola Ahmed Tinubu, GCFR
+        </p>
+        <p className="mt-1 font-mono text-[10px] text-foreground/60">
+          The Renewed Hope Agenda
+        </p>
       </div>
 
       {/*
